@@ -16,7 +16,7 @@ Deja que la ropa con estilo propio de Howller le muestre a todo el mundo quién 
 
   https://www.mascaradelatex.com/
 
-- Por su log in, registro y carrito:
+- Por su login, registro y carrito:
 
   https://www.cuidadoconelperro.com.mx/
 
@@ -54,3 +54,6 @@ Ingeniero en sistemas informaticos recien egresado de la Universidad Tecnologica
 
 - [Oscar Baez](https://github.com/0scarBaez)
 Arquitecto egresado de la Facultad de Arquitectura de la UNAM con gusto por el diseño gráfico. Recientemente estoy incursionando en el mundo de la programación y desarrollo web ya que me gustaría dar un giro en mi vida profesional y este es un campo con mucho potencial actualmente y a futuro. 
+
+Gregorio Crisanto Gaspar
+Ingeniero en sistemas computacionales recien egresado de la Universidad Tecnólogico de Estudios Superiores de Naucalpan, con ganas de aprender desarrollo web, desde la parte del front-end y back-end, me gustaria  aprender de los conociminetos de mis compañeros y viceversa. 

@@ -1,4 +1,7 @@
-# grupo_13_howller
+# Howller
+## Tienda de camisetas online
+
+![](Howller_logotipo.png)
 
 **¿Cuál es tu fuente de inspiración?**
 
@@ -40,7 +43,7 @@ Venta en línea de playeras con una excelente calidad de tela y estampado que te
 
   https://toxic.mx/
 
-## Logo
+
 
 
 
@@ -55,18 +58,17 @@ Venta en línea de playeras con una excelente calidad de tela y estampado que te
 ## Tipografías
 
 
-
-
-
-
 ## Integrantes del equipo
 
 
 Dario Hinostroza Loera
+
 Ingeniero en sistemas informaticos recien egresado de la Universidad Tecnologica de Nezahualcoyotl, con mucho interes por aprender nuevas tecnologias para seguir mejorando y aprendiendo nuevas habilidades, me gusta el desarrollo web e ir aprendiendo nuevos campos como la Data Science y la IA. 
 
 Oscar Baez
+
 Arquitecto egresado de la Facultad de Arquitectura de la UNAM con gusto por el diseño gráfico. Recientemente estoy incursionando en el mundo de la programación y desarrollo web ya que me gustaría dar un giro en mi vida profesional y este es un campo con mucho potencial actualmente y a futuro. 
 
 Gregorio Crisanto Gaspar
+
 Ingeniero en sistemas computacionales recien egresado de la Universidad Tecnólogico de Estudios Superiores de Naucalpan, con ganas de aprender desarrollo web, desde la parte del front-end y back-end, me gustaria  aprender de los conociminetos de mis compañeros y viceversa. 

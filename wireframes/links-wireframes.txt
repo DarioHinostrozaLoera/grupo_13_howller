@@ -7,6 +7,10 @@ LOGIN MOVILE - https://wireframe.cc/I2wv64
 REGISTER - https://wireframe.cc/fSrtN3
 REGISTER MOVILE - https://wireframe.cc/HWxRsq
 
+CARRITO DE COMPRAS: https://wireframe.cc/GLKtSC
+CARRITO DE COMPRAS MOVILE: https://wireframe.cc/k0UXzr
 
+PRODUCT: https://wireframe.cc/u58nxw
+PRODUCT MOVILE: https://wireframe.cc/6CtoyU
 
 

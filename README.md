@@ -76,7 +76,7 @@ Partiendo de la estrategia de diseño Mobile Fisrt se desarrollaron más a detal
 ![](mockups/04Login.jpg)
 ![](mockups/05Registro.jpg)
 
-Nota:todas las imagenes de las playeras pertenecen a Máscara de Látex y fueron tomadas unicamente con fines didácticos.
+Nota:todas las imagenes de las playeras pertenecen a Máscara de Látex y fueron tomadas únicamente con fines didácticos.
 
 ## Integrantes del equipo
 

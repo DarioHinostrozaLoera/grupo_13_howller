@@ -57,6 +57,9 @@ Venta en línea de playeras con una excelente calidad de tela y estampado que te
 
 ## Tipografías
 
+Poppins
+Source Sans Pro
+Alegreya Sans
 
 ## Integrantes del equipo
 

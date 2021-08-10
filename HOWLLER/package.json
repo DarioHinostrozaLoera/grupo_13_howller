@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Iniciando proyecto integrador (HOWLLER)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarioHinostrozaLoera/grupo_13_howller.git"
+  },
+  "author": "Gregorio C., Oscar B. y Dario H.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarioHinostrozaLoera/grupo_13_howller/issues"
+  },
+  "homepage": "https://github.com/DarioHinostrozaLoera/grupo_13_howller#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}

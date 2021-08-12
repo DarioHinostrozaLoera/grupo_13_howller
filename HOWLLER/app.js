@@ -7,7 +7,7 @@ app.listen(3000, ()=>{
     console.log('Servidor funcionando');
 });
 
-app.get('/', (req,res)=>{
+app.get('/home', (req,res)=>{
     res.sendFile(__dirname + '/views/home.html');
     
 });

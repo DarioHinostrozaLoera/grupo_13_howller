@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "nodemon app.js"
+    "develop": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.12"
+  },
+  "engines": {
+    "node": "14.17.0"
   }
 }

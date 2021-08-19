@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style_login.css">
+
+    <title>Howller</title>
+</head>
+<body>
+        <div class="top">
+            <a class="burger-container" href="#">
+                <img src="img/logos/burger.svg" alt="">
+            </a>
+
+            <a class="logo-container" href="/">
+                <img src="img/logos/00 logotipo-01.svg" alt="">
+            </a>
+  
+            <a class="user-container" href="/login">
+                <img src="img/logos/user.svg" alt="">
+            </a>
+            <a class="cart-container" href="/cart">
+                <img src="img/logos/cart.svg" alt="">
+            </a>
+        </div>
+
+        <div class="busqueda">
+            <input type="text" placeholder="BUSCAR">
+        </div>
+
+<!--FORMULARIO-->        
+<div class="form">
+      
+    <ul class="tab-group">
+      <li class="tab active"><a href="#login">Iniciar sesión</a></li>
+      <li class="tab"><a href="#signup">Registrarse</a></li>
+    </ul>
+    
+    <div class="tab-content">
+     
+      <div id="login">   
+        
+        <form action="/" method="post">
+        
+        <div class="field-wrap">
+          <input type="email"required autocomplete="off" placeholder="Correo electrónico *"/>
+        </div>
+        
+        <div class="field-wrap">
+          <input type="password"required autocomplete="off" placeholder="Contraseña *"/>
+        </div>
+        
+        <p class="forgot"><a href="#">¿Olviste tu Contraseña</a></p>
+        
+        <button class="button button-block">Ingresar</button>
+        
+        </form>
+
+      </div>
+      <div id="signup">   
+
+        <form action="/" method="post">
+        
+        <div class="top-row">
+
+          <div class="field-wrap">
+            <input type="text" required autocomplete="off" placeholder="Nombre*" />
+          </div>
+      
+          <div class="field-wrap">
+            <input type="text"required autocomplete="off" placeholder="Apellidos*"/>
+          </div>
+
+        </div>
+
+        <div class="field-wrap">
+          <input type="email"required autocomplete="off" placeholder="Correo electronico*"/>
+        </div>
+        
+        <div class="field-wrap">
+          <input type="password"required autocomplete="off" placeholder="Contraseña"/>
+        </div>
+        <div class="field-wrap">
+            <input type="password"required autocomplete="off" placeholder="Confirmar contraseña"/>
+          </div>
+          <div class="field-wrap">
+            <input class ="check" type="checkbox"/>
+            <p>Declaro que he leído y acepto la Política de Privacidad y los Términos y Condiciones de HOWLLER.</p>
+          </div>
+        
+        <button type="submit" class="button button-block">Registrarse</button>
+        
+        </form>
+
+      </div>
+      
+    </div><!-- tab-content -->
+    
+</div> <!-- /form -->
+
+</body>
+<footer>
+    <div class="ft">
+        <div class="ff"> 
+            <div> Nosotros </div>
+            <ul>
+                <li>
+                    <a href="#">Acerca de nosotros</a>
+                </li>
+    
+                <li>
+                    <a href="#"> Bolsa de trabajo</a>
+                </li>
+            </ul>  
+            </div>     
+    
+            <div class="ff"> 
+                <div>Atención a clientes</div>
+                <ul>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+        
+                    <li>
+                        <a href="#">Preguntas frecuentes</a>
+                    </li>
+    
+                    <li>
+                        <a href="#">Cambios y devoluciones</a>
+                    </li>
+                </ul>  
+                </div>   
+    
+                <div class="ff"> 
+                    <div> Envíos</div>
+                    <ul>
+                        <li>
+                            <a href="#">Envíos gratis</a>
+                        </li>
+            
+                        <li>
+                            <a href="#">Meses sin intereses</a>
+                        </li>
+                    </ul>
+                    </div>   
+    </div>
+
+    <div class="social">
+        <a class="socialmedia-container" href="#">
+            <img src="img/icons/facebook.svg" alt="">
+        </a>
+
+        <a class="socialmedia-container" href="#">
+            <img src="img/icons/instagram.svg" alt="">
+        </a>
+
+        <a class="socialmedia-container" href="#">
+            <img src="img/icons/twitter.svg" alt="">
+        </a>
+    </div>
+
+<div class="copyright"> ©2021, Howller todos los derechos reservados </div>
+    
+</footer>
+</html>

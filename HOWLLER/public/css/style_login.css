@@ -1,0 +1,109 @@
+
+.tab-group a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
+    
+}
+.tab-group ul{
+    margin: 15px;
+}
+.tab-group li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.tab-group li  :hover{
+    border-bottom: solid 3px black;
+}
+.field-wrap input {
+    width: 260px;
+    margin: 15px;
+    height: 30px;
+    font-size: 15px;
+    font-family: "Poppins";
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+}
+.forgot a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
+    font-size: 15px;
+    margin-left: 15px;
+}
+.field-wrap .check{
+    width: 10px;
+    height: 13px;
+}
+.field-wrap p{
+    display: inline;
+    font-size: 11px;
+    width: 150px;
+    line-height: 9px;
+    text-align: center;
+}
+.form button{
+    width: 150px;
+    margin: 15px;
+    height: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFC947;
+    border-radius: 15px;
+    border: none;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+.form{
+    border: solid #32E0C4;
+    margin: 35px 10px 55px 10px;
+    
+}
+@media ( min-width: 425px){
+    .field-wrap input{
+        width: 360px;
+    }
+    .tab-group{
+        padding-left: 70px;
+    }
+    
+}
+@media(min-width: 768px){
+    .form{
+        width: 500px;
+        margin: 35px 131px 55px 131px ;
+        
+        
+    }
+    .field-wrap input{
+        width: 450px;
+    }
+    .tab-group{
+        padding-left: 120px;
+    }
+}
+@media(min-width: 1024px){
+    .form{
+    
+        margin: 35px 259px 55px 259px ;
+    }
+}
+@media(min-width: 1440px){
+    .form{
+    
+        margin: 35px 467px 55px 467px ;
+    }
+}
+
+#signup {
+display: none;
+}
+.tab a:active #signup{
+    display: block;
+}
+/*#login{
+    display: none;
+}*/

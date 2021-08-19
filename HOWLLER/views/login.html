@@ -39,8 +39,8 @@
 <div class="form">
       
     <ul class="tab-group">
-      <li class="tab active"><a href="#login">Iniciar sesión</a></li>
-      <li class="tab"><a href="#signup">Registrarse</a></li>
+      <li class="tab active"><a href="#login" onclick="mostarlogin();">Iniciar sesión</a></li>
+      <li class="tab"><a href="#signup" onclick="mostarregister();">Registrarse</a></li>
     </ul>
     
     <div class="tab-content">
@@ -104,6 +104,16 @@
     </div><!-- tab-content -->
     
 </div> <!-- /form -->
+<script type="text/javascript">
+  function mostarregister(){
+    document.getElementById('signup').style.display = 'block'
+    document.getElementById('login').style.display = 'none'
+  }
+  function mostarlogin(){
+    document.getElementById('signup').style.display = 'none'
+    document.getElementById('login').style.display = 'block'
+  }
+</script>
 
 </body>
 <footer>

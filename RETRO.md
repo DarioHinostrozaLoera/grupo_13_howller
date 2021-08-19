@@ -27,3 +27,6 @@ El balance general es bueno. Como equipo hemos trabajado correctamente, mantenie
 
 
 **Link trello:** https://trello.com/b/HtRX8I2c/sprint2-wireframes
+
+
+Hola Soy un comentario nuevo

@@ -92,3 +92,6 @@ Arquitecto egresado de la Facultad de Arquitectura de la UNAM con gusto por el d
 #### Gregorio Crisanto Gaspar
 
 Ingeniero en sistemas computacionales recien egresado de la Universidad Tecnólogico de Estudios Superiores de Naucalpan, con ganas de aprender desarrollo web, desde la parte del front-end y back-end, me gustaria  aprender de los conociminetos de mis compañeros y viceversa. 
+
+####Link_Trello
+https://trello.com/b/HtRX8I2c/sprint2-wireframes

@@ -27,17 +27,17 @@ El balance general es bueno. Como equipo hemos trabajado correctamente, mantenie
 
 
 **¿Qué problemas tuvimos?**
-    Subir cambios al repositorio GITHUB. 
-    Poca comunicación. 
-    Problemas con los estilos CSS.
+   - Subir cambios al repositorio GITHUB. 
+   - Poca comunicación. 
+   - Problemas con los estilos CSS.
 **¿Que hicimos bien?**
-    Apoyo en equipo 
-    Asignación de actividades
-    Puntualidad en los horarios establecidos
+   - Apoyo en equipo 
+   - Asignación de actividades
+   - Puntualidad en los horarios establecidos
 **¿Qué podemos mejorar?**
-    Dedicarle más tiempo al proyecto.
-    Mejor comunicación vía chat
-    Agregar más detalles al 
-    Ser más autodidacta(Buscar más recursos)
+   - Dedicarle más tiempo al proyecto.
+   - Mejor comunicación vía chat
+   - Agregar más detalles al 
+   - Ser más autodidacta(Buscar más recursos)
 
 Link de la pagina en Heroku https://howller.herokuapp.com/

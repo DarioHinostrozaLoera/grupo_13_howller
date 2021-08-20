@@ -26,6 +26,18 @@
 El balance general es bueno. Como equipo hemos trabajado correctamente, manteniendo un trato coordial, dividiendonos los puntos a trabajar y siempre teniendo como objetivo el entregar en tiempo y forma, lo cual se demostró en el resultado del Sprint 1. Podríamos mejorar algunos aspectos en cuanto a la comunicación de nuestros progresos pero por el momento eso no ha afectado el resultado del proyecto.
 
 
-**Link trello:** https://trello.com/b/HtRX8I2c/sprint2-wireframes
+**¿Qué problemas tuvimos?**
+    Subir cambios al repositorio GITHUB. 
+    Poca comunicación. 
+    Problemas con los estilos CSS.
+**¿Que hicimos bien?**
+    Apoyo en equipo 
+    Asignación de actividades
+    Puntualidad en los horarios establecidos
+**¿Qué podemos mejorar?**
+    Dedicarle más tiempo al proyecto.
+    Mejor comunicación vía chat
+    Agregar más detalles al 
+    Ser más autodidacta(Buscar más recursos)
 
 Link de la pagina en Heroku https://howller.herokuapp.com/

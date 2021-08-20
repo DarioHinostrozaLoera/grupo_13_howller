@@ -96,9 +96,10 @@
 @media(min-width: 1440px){
     .form{
         margin: 50px auto  ;
+        width: 30%;
     }
     .tab-group{
-        padding-left: 35%;
+        padding-left: 25%;
     }.field-wrap input{
         width: 95%;
     }

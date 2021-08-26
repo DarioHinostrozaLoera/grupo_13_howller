@@ -73,6 +73,32 @@ body{
 /*CART ENDS*/
 
 
+.bar{
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.bar a{
+    text-decoration: none;
+    color: #212121;
+    margin: 5px 0;
+}
+
+.bar span{
+    text-transform: uppercase;
+}
+
+@media (min-width: 0px){
+    .bar {
+        display:none;
+    }
+}
+
+
 /*SEARCH BAR*/
 input{
     width: 100%;
@@ -232,6 +258,10 @@ footer{
 
 
 @media (min-width: 1024px){
+
+    .busqueda {
+        display: none;
+    }
 .top{
     display: flex;
     width: 100%;
@@ -293,6 +323,11 @@ footer{
     padding-right: 40%;
 }
 /*CART ENDS*/
+
+.bar {
+    display:flex;
+}
+
 }
 
 
@@ -630,6 +665,7 @@ display: flex;
 
  
     .contenedor-A{
+        margin-top: 10px;
         width: 70%;
         height: auto;
         border: #32E0C4  3px solid;

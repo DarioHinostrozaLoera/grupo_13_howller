@@ -72,6 +72,31 @@ body{
 }
 /*CART ENDS*/
 
+.bar{
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.bar a{
+    text-decoration: none;
+    color: #212121;
+    margin: 5px 0;
+}
+
+.bar span{
+    text-transform: uppercase;
+}
+
+@media (min-width: 0px){
+    .bar {
+        display:none;
+    }
+}
+
 
 /*SEARCH BAR*/
 input{
@@ -232,6 +257,10 @@ footer{
 
 
 @media (min-width: 1024px){
+
+.busqueda {
+    display: none;
+}
 .top{
     display: flex;
     width: 100%;
@@ -293,6 +322,12 @@ footer{
     padding-right: 40%;
 }
 /*CART ENDS*/
+
+.bar {
+    display:flex;
+}
+
+
 }
 
 

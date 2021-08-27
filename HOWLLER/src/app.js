@@ -1,16 +1,28 @@
+// Modules
 const express = require('express');
 const app = express();
+// Here is missing one... 😇
+const path = require('path');
+
+const mainRouter = require('./routes/mainRouter');
+
+app.set('views', path.join(__dirname, './views'))
+app.set('view engine', 'ejs');
+
+//Settings
 app.use(express.static('public'));
 
 let port = process.env.PORT || 3000;
 
+app.use('/', mainRouter);
 
-app.listen(port, ()=>{
-    console.log('Servidor funcionando');
+app.listen(port, () => {
+    console.log(`Server listening in port ${port} 🤓👌 `);
 });
 
+/*
 app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/home.html');
+    res.sendFile(__dirname + '/views/home.ejs');
     
 });
 app.get('/login', (req,res)=>{
@@ -54,3 +66,4 @@ app.get('/product7', (req,res)=>{
 app.get('/product8', (req,res)=>{
     res.sendFile(__dirname + '/views/detalle_product8.html');
 });
+*/

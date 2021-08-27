@@ -2,11 +2,11 @@
   "name": "package.json",
   "version": "1.0.0",
   "description": "Iniciando proyecto integrador (HOWLLER)",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "nodemon app.js",
-    "start": "node app.js"
+    "develop": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/DarioHinostrozaLoera/grupo_13_howller#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "nodemon": "^2.0.12"
   },

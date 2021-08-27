@@ -80,6 +80,7 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
     text-align: center;
 }
@@ -335,3 +336,66 @@ footer{
 
 
 /* ///// COPY PASTE ///// */
+
+/*LUPA*/
+
+.cont-srch{
+    margin-top: 20px;
+    height: auto;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.search-box{
+    transform: translate(-50%, -50%);
+    /* background: greenyellow; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.search-box:hover > .search-txt{
+    width: 200px;
+    background: white;
+    border-radius: 5px;
+}
+
+.search-box:hover > .search-btn{
+    color: black;
+    
+}
+
+.search-btn {
+    text-decoration: none;
+    color: #212121;
+/*     float: right; */
+    width: 40px;
+    /* height: 20px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn i {
+    color: #212121
+
+}
+
+.search-txt{
+    border: none;
+    outline: none;
+    background: none;
+   /*  float: left; */
+    padding: 0;
+    color:#212121;
+    font-size: 16px;
+    transition:0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+/*LUPA ENDS*/

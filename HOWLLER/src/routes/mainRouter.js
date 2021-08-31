@@ -7,9 +7,11 @@ const mainController = require('../controllers/mainController');
 
 /*GET Home Page*/
 router.get('/', mainController.index);
+/*GET Mome Page Detail Product*/
+router.get('/detalle/:productId/', mainController.detail)
 /*GET Login Page*/
 router.get('/login', mainController.login);
 /*GET Cart Page*/
-router.get('/cart', mainController.cart);
+router.get('/cart/:productId?/', mainController.cart);
 
 module.exports = router;

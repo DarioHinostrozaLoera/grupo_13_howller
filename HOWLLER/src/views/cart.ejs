@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/cart.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/howllericon-01.png">
 
     <title>Howller</title>
@@ -22,9 +22,9 @@
 
     <div class="product-container">
 
-            <img src="img/products/01.jpg" alt="">
+            <img src="<%=playeraC.img%>" alt=""><!--/img/products/01.jpg-->
 
-            <span>Nombre del producto</span>
+            <span><%=playeraC.titulo%></span>
         
             <div class="size">
                 <span> CH </span>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="value">
-                    <span> Rosa </span>
+                    <span> <%=playeraC.color%> </span>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="value" >
-                    <span id="right"> $149 </span>
+                    <span id="right"> $<%=playeraC.precio%> </span>
                 </div>
 
             </div>
@@ -72,7 +72,7 @@
                 </div>
 
             </div>
-            <a id="bote" href="#"> <img src="img/icons/001-trash-01.svg"> </a> 
+            <a id="bote" href="#"> <img src="/img/icons/001-trash-01.svg"> </a>
 
     </div>
 
@@ -81,18 +81,18 @@
 <div class="contenedor-01">
     <div class="contenedor-02">
         <p> ¡Te faltan $000 para envío gratis!</p>
-        <img src="img/icons/001-delivery-truck-01.svg" alt="">
+        <img src="/img/icons/001-delivery-truck-01.svg" alt="">
     </div>
     <div class="contenedor-03">
         <p>Resumen</p>
             <div class="datos-art">
                 <p id="inf">Total de articulos</p>
-                <p id="num-a"> 0</p>
+                <p id="num-a"> 1</p>
             </div>
 
             <div class="total-pagar">
                 <p id="inf">Total</p>
-                <p id="num-a">$000</p>
+                <p id="num-a">$<%=playeraC.precio%></p>
             </div>
 
             <div id="btn-pedido"> 
@@ -127,11 +127,11 @@
 
     <div class="contenedor-A">
         <div class="contenedor-B">
-            <img src="img/products/01.jpg" alt="">
+            <img src="<%=playeraC.img%>" alt="">
         </div>
         <div class="contenedor-C">
             <div class="nom">
-                Homero EG
+                <%=playeraC.titulo%>
             </div>
                 <div class="info">
                     <div class="vaar">
@@ -147,7 +147,7 @@
                     COLOR:
                 </div>
                 <div class="vaalue">
-                    ROSA
+                    <%=playeraC.color%>
                 </div>
         </div>
     
@@ -157,7 +157,7 @@
                 PRECIO
             </div>
             <div class="moneda">
-                $000
+                $<%=playeraC.precio%>
             </div>
         </div>
         <div class="contenedor-D">
@@ -169,7 +169,7 @@
             </div>
         </div>
         <div class="contenedor-F">
-           <a href="#"> <img src="img/icons/001-trash-01.svg"> </a> 
+           <a href="#"> <img src="/img/icons/001-trash-01.svg"> </a>
         </div>
     
     </div>
@@ -178,18 +178,18 @@
         <div class="contenedor-1">
             <div class="contenedor-2">
                 <p> ¡Te faltan $000 para envío gratis!</p>
-                <img src="img/icons/001-delivery-truck-01.svg" alt="">
+                <img src="/img/icons/001-delivery-truck-01.svg" alt="">
             </div>
             <div class="contenedor-3">
                 <p>Resumen</p>
                     <div class="daatos-art">
                         <p id="inff">Total de articulos</p>
-                        <p id="num-aa"> 0</p>
+                        <p id="num-aa"> 1</p>
                     </div>
         
                     <div class="totaal-pagar">
                         <p id="inff">Total</p>
-                        <p id="num-aa">$000</p>
+                        <p id="num-aa">$<%=playeraC.precio%></p>
                     </div>
         
                     <div id="botn-pedido"> 

@@ -21,11 +21,11 @@
 <main>
     <div id="slider">
         <figure>
-            <img src="img/products/slider01.jpg" alt="">
-            <img src="img/products/slider02.jpg" alt="">
-            <img src="img/products/slider03.jpg" alt="">
-            <img src="img/products/slider04.jpg" alt="">
-            <img src="img/products/slider01.jpg" alt="">
+            <img src="/img/products/slider01.jpg" alt="">
+            <img src="/img/products/slider02.jpg" alt="">
+            <img src="/img/products/slider03.jpg" alt="">
+            <img src="/img/products/slider04.jpg" alt="">
+            <img src="/img/products/slider01.jpg" alt="">
 
         </figure>
 
@@ -34,7 +34,7 @@
     <% catalogo.forEach (playera => {%>
 
         <div class="product-container">
-            <a  href="detalles/product1">
+            <a  href="/detalle/<%= playera.id %>">
                 <img src="<%= playera.img %>" alt="">
             </a>
                 <span>

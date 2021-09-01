@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/howllericon-01.png">
 
     <title>Howller</title>
 </head>
 <body>
-    <!-- HEADER-->
-    <%- include('partials/header') %>
+<!-- HEADER-->
+<%- include('../partials/header') %>
 
 <main>
     <div id="slider">
@@ -31,35 +31,35 @@
 
     </div>
 
-    <% catalogo.forEach (playera => {%>
+    <% catalogo.forEach (playera => { %>
 
         <div class="product-container">
-            <a  href="/detalle/<%= playera.id %>">
+            <a href="/detalle/<%= playera.id %>">
                 <img src="<%= playera.img %>" alt="">
             </a>
-                <span>
+            <span>
                     <%= playera.titulo.toUpperCase() %>
                 </span>
-            
-                <div class="sizes">
-                    <span> CH </span>
-                    <span> M </span>
-                    <span> G </span>
-                    <span> EG </span>
-                </div>
-            
-                <span id="precio">
+
+            <div class="sizes">
+                <span> CH </span>
+                <span> M </span>
+                <span> G </span>
+                <span> EG </span>
+            </div>
+
+            <span id="precio">
                     $ <%= playera.precio %>
                 </span>
-                
+
         </div>
 
-    <%}) %>
+    <% }) %>
 
 </main>
 
 </body>
 
-<%- include('partials/footer') %>
+<%- include('../partials/footer') %>
 
 </html>

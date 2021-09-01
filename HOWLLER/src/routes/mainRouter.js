@@ -13,5 +13,8 @@ router.get('/detalle/:productId/', mainController.detail)
 router.get('/login', mainController.login);
 /*GET Cart Page*/
 router.get('/cart/:productId?/', mainController.cart);
+/*GET Add Form or edit Page*/
+router.get('/form', mainController.form);
+
 
 module.exports = router;

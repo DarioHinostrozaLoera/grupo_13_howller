@@ -63,6 +63,7 @@ Link de la pagina en Heroku https://howller.herokuapp.com/
 - Divirnos entre todos los puntos del sprint a entregar.
 - Comunicarnos vía mensajes de texto.
 - Mostrar nuestros avances.
+- Buscar puntos para mejorar el proyecto que no necesariamente forman parte de los entregables. 
 
 **4. Hacer menos**
 

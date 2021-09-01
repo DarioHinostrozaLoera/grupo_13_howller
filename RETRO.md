@@ -26,15 +26,15 @@
 El balance general es bueno. Como equipo hemos trabajado correctamente, manteniendo un trato coordial, dividiendonos los puntos a trabajar y siempre teniendo como objetivo el entregar en tiempo y forma, lo cual se demostró en el resultado del Sprint 1. Podríamos mejorar algunos aspectos en cuanto a la comunicación de nuestros progresos pero por el momento eso no ha afectado el resultado del proyecto.
 
 
-**¿Qué problemas tuvimos?
+**¿Qué problemas tuvimos?**
    - Subir cambios al repositorio GITHUB. 
    - Poca comunicación. 
    - Problemas con los estilos CSS.
-**¿Que hicimos bien?
+**¿Que hicimos bien?**
    - Apoyo en equipo 
    - Asignación de actividades
    - Puntualidad en los horarios establecidos
-**¿Qué podemos mejorar?
+**¿Qué podemos mejorar?**
    - Dedicarle más tiempo al proyecto.
    - Mejor comunicación vía chat
    - Agregar más detalles al 

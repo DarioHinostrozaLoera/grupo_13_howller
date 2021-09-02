@@ -23,27 +23,40 @@
     <main>
         <div class="conteinerproduct">
             <div class="cont_img_mas">
+
                 <div class="colum_img_mas">
-                    <img src="<%= playera.img %>" alt="">
+                    <img src="<%= playera.img %>" alt="" onclick="myfunction(this)">
+                </div>
+                
+                <div class="colum_img_mas">
+                    <img src="<%= playera.det01 %>" alt="" onclick="myfunction(this)">
 
                 </div>
                 <div class="colum_img_mas">
-                    <img src="<%= playera.img %>" alt="">
+                    <img src="<%= playera.det02 %>" alt="" onclick="myfunction(this)">
 
                 </div>
                 <div class="colum_img_mas">
-                    <img src="<%= playera.img %>" alt="">
+                    <img src="<%= playera.det03 %>" alt="" onclick="myfunction(this)">
 
                 </div>
                 <div class="colum_img_mas">
-                    <img src="<%= playera.img %>" alt="">
+                    <img src="<%= playera.det04 %>" alt="" onclick="myfunction(this)">
                 </div>
+
             </div>
             <div class="cont_img_principal">
                 <div class="colum_img_prin">
-                    <img src="<%= playera.img %>" alt="">
+                    <img id="imageBox" src="<%= playera.img %>" alt="">
                 </div>
             </div>
+
+            <script>
+                function myfunction (smallImg){
+                    var fullImg = document.getElementById ("imageBox");
+                    fullImg.src = smallImg.src;
+                }
+            </script>
 
 
             <div class="descipcion_product">
@@ -73,47 +86,40 @@
                     <h2>DESCRIPCIÓN</h3>
                         <p><%= playera.descripcion %></p>
                 </div>
-                <h2>COMPARTE</h2>
-                <div class="h2_p">
 
-                    <a class="socialmedia-container" href="#">
-                        <img style="text-align: center ;" src="../img/icons/facebook.svg" alt="">
-                    </a>
-
-                    <a class="socialmedia-container" href="#">
-                        <img style="text-align: center ;" src="../img/icons/instagram.svg" alt="">
-                    </a>
-
-                    <a class="socialmedia-container" href="#">
-                        <img style="text-align: center ;" src="../img/icons/twitter.svg" alt="">
-                    </a>
-
+                <div class="compartir">
+                    <h2>COMPARTE</h2>
+                    <a href="#"> <img style="text-align: center ;" src="../img/icons/facebook.svg" alt=""> </a>
+                     <a href="#"> <img style="text-align: center ;" src="../img/icons/instagram.svg" alt=""> </a>   
+                     <a href="#"> <img style="text-align: center ;" src="../img/icons/twitter.svg" alt=""> </a>
+                        
                 </div>
+
 
             </div>
 
         </div>
 
         <div class="conteinerproduct">
-            <div class="descipcion_product">
+            
                 <h2>Productos relacionadados</h2>
-            </div>
+            
 
             <div class="cont_img_mas2">
                 <div class="colum_img_mas">
-                    <img src="/img/products/02.jpg" alt="">
+                    <img src="/img/products/02/02-1.jpg" alt="">
 
                 </div>
                 <div class="colum_img_mas">
-                    <img src="/img/products/03.jpg" alt="">
+                    <img src="/img/products/03/03-1.jpg" alt="">
 
                 </div>
                 <div class="colum_img_mas">
-                    <img src="/img/products/04.jpg" alt="">
+                    <img src="/img/products/04/04-1.jpg" alt="">
 
                 </div>
                 <div class="colum_img_mas">
-                    <img src="/img/products/05.jpg" alt="">
+                    <img src="/img/products/05/05-1.jpg" alt="">
                 </div>
             </div>
 

@@ -15,6 +15,8 @@ router.get('/login', mainController.login);
 router.get('/cart/:productId?/', mainController.cart);
 /*GET Add Form or edit Page*/
 router.get('/form', mainController.form);
+/*GET Generic Categorie edit Page*/
+router.get('/categorie', mainController.categorie);
 
 
 module.exports = router;

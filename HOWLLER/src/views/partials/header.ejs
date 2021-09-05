@@ -1,41 +1,59 @@
-<div class="head-fixed">
-
-    <div class="top">
-        <a class="burger-container" href="#">
-            <img src="/img/logos/burger.svg" alt="">
-        </a>
-
-        <a class="logo-container" href="/">
-            <img src="/img/logos/00 logotipo-01.svg" alt="">
-        </a>
-
-        <a class="user-container" href="/login">
-            <img src="/img/logos/user.svg" alt="">
-        </a>
-        <a class="cart-container" href="/cart/2">
-            <img src="/img/logos/cart.svg" alt="">
-        </a>
-    </div>
+<header>
+    <nav>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <a href="/" class="logo"> <img  src="/img/logos/00 logotipo-01.svg" alt=""> </a>
+        <div class="icons-container">
+            <a href="/login" class="kk" id="user"> <i class="fas fa-user"></i> </a>
+            <a href="/cart/5" class="kk" id="cart"> <i class="fas fa-shopping-cart"></i> </a>
+        </div>
+    
+        <ul class="mainMenu">
+            <li><a href="/categorie">Hombres</a></li>
+            <li><a href="/categorie">Mujeres</a></li>
+            <li><a href="/categorie">Niños</a></li>
+            <li><a href="/categorie">Niñas</a></li>
+            <li><a href="/categorie">Ofertas</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </span>
+        </ul>
+    </nav>
     <div class="bar">
-        <a href="/categorie"> <span> Hombres </span> </a>
-        <a href="/categorie"> <span> Mujeres </span> </a>
-        <a href="/categorie"> <span> Niñas </span> </a>
-        <a href="/categorie"> <span> Niños</span> </a>
-        <a href="/categorie"> <span> Ofertas</span> </a>
+        <div id="secc-venta">
+            <a href="/categorie"> <span> Hombres </span> </a>
+            <a href="/categorie"> <span> Mujeres </span> </a>
+            <a href="/categorie"> <span> Niñas </span> </a>
+            <a href="/categorie"> <span> Niños</span> </a>
+            <a href="/categorie"> <span> Ofertas</span> </a>
+        </div>
+       
         <span class="cont-srch"> 
-            <div class="search-box">
-                <input class="search-txt" type="text" name="" placeholder= "Buscar" >
-                    <a class="search-btn" href="">
-                        <i class="fas fa-search"></i>
-                    </a>
-            </div>
+            <input class="search-txt" type="text" name="" placeholder= "BUSCAR" > <a href="/detalle/1"> <i class="fas fa-search"></i></a>
         </span>
-
+    
     </div>
+    
+    <script>
+            const mainMenu = document.querySelector('.mainMenu');
+            const closeMenu = document.querySelector('.closeMenu');
+            const openMenu = document.querySelector('.openMenu');
+    
+    
+    
+    
+            openMenu.addEventListener('click',show);
+            closeMenu.addEventListener('click',cerrar);
+    
+            function show(){
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+            }
+            function cerrar(){
+            mainMenu.style.top = '-100%';
+            }
+    </script>
 
-    <div class="busqueda">
-        <input type="text" placeholder="BUSCAR">
-    </div>
-
-
-</div>
+</header>

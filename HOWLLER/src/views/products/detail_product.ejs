@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/det_pro.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/howllericon-01.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/howllericon-01.png">
 
     <title>Howller</title>
 </head>
@@ -66,15 +66,37 @@
                 </div>
                 <div class="tallas">
                     <div class="ch">CH</div>
-                    <div class="g">G</div>
                     <div class="m">M</div>
+                    <div class="g">G</div>
                     <div class="eg">EG</div>
 
                 </div>
-                <div class="h2_p">
+                <button id="open">
+                    Guia de tallas
                     <i class="fa fa-table" aria-hidden="true"></i>
-                    <a href="" style="text-align: center ;">Guia de tallas</a>
+                </button>
+
+                <div class="modal_container" id="modal_container">
+                    <div class="modal">
+                        <img src="/img/products/guia_tallas.jpg" alt="">
+
+                    </div>
                 </div>
+
+                <script>
+                    const open = document.getElementById('open');
+                    const modal_container = document.getElementById('modal_container');
+                    const close = document.getElementById('modal_container');
+
+                    open.addEventListener ('click', () => {
+                    modal_container.classList.add('show');
+                    });
+
+                    close.addEventListener ('click', () => {
+                    modal_container.classList.remove('show');
+                    });
+                </script>
+
                 <div>
 
                     <a href="/cart/<%= playera.id %>">
@@ -106,19 +128,19 @@
             
 
             <div class="cont_img_mas2">
-                <div class="colum_img_mas">
+                <div class="colum_img_mas2">
                     <img src="/img/products/02/02-1.jpg" alt="">
 
                 </div>
-                <div class="colum_img_mas">
+                <div class="colum_img_mas2">
                     <img src="/img/products/03/03-1.jpg" alt="">
 
                 </div>
-                <div class="colum_img_mas">
+                <div class="colum_img_mas2">
                     <img src="/img/products/04/04-1.jpg" alt="">
 
                 </div>
-                <div class="colum_img_mas">
+                <div class="colum_img_mas2">
                     <img src="/img/products/05/05-1.jpg" alt="">
                 </div>
             </div>

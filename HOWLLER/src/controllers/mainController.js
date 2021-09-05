@@ -106,6 +106,26 @@ const listaProductos = [
     },
 
 ];
+/* 
+const categorias =[
+    {
+        categoria:"Hombres"
+    },
+    {
+        categoria:"Mujeres"
+    },
+    {
+        categoria:"Niñas"
+    },
+    {
+        categoria:"Niños"
+    },
+    {
+        categoria:"Ofertas"
+    },
+
+
+] */
 
 const mainController = {
     index: (req, res) => {
@@ -126,7 +146,8 @@ const mainController = {
         res.render('./users/forms');
     },
     categorie: (req, res) => {
-        res.render('./products/categorie', {catalogo: listaProductos});
+       /*  let seccion = categorias.find ((secc) => secc.categoria == req.params.nomCategoria) */
+        res.render('./products/categorie', {catalogo: listaProductos}, /* {seccion : seccion} */);
     }
 
 }

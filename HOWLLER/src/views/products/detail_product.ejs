@@ -27,7 +27,7 @@
                 <div class="colum_img_mas">
                     <img src="<%= playera.img %>" alt="" onclick="myfunction(this)">
                 </div>
-                
+
                 <div class="colum_img_mas">
                     <img src="<%= playera.det01 %>" alt="" onclick="myfunction(this)">
 
@@ -52,8 +52,8 @@
             </div>
 
             <script>
-                function myfunction (smallImg){
-                    var fullImg = document.getElementById ("imageBox");
+                function myfunction(smallImg) {
+                    var fullImg = document.getElementById("imageBox");
                     fullImg.src = smallImg.src;
                 }
             </script>
@@ -88,18 +88,18 @@
                     const modal_container = document.getElementById('modal_container');
                     const close = document.getElementById('modal_container');
 
-                    open.addEventListener ('click', () => {
-                    modal_container.classList.add('show');
+                    open.addEventListener('click', () => {
+                        modal_container.classList.add('show');
                     });
 
-                    close.addEventListener ('click', () => {
-                    modal_container.classList.remove('show');
+                    close.addEventListener('click', () => {
+                        modal_container.classList.remove('show');
                     });
                 </script>
 
                 <div>
 
-                    <a href="/cart/<%= playera.id %>">
+                    <a href="/products/cart/<%= playera.id %>">
                         <button class="button">AGREGAR AL CARRITO</button>
                     </a>
 
@@ -112,9 +112,9 @@
                 <div class="compartir">
                     <h2>COMPARTE</h2>
                     <a href="#"> <img style="text-align: center ;" src="../img/icons/facebook.svg" alt=""> </a>
-                     <a href="#"> <img style="text-align: center ;" src="../img/icons/instagram.svg" alt=""> </a>   
-                     <a href="#"> <img style="text-align: center ;" src="../img/icons/twitter.svg" alt=""> </a>
-                        
+                    <a href="#"> <img style="text-align: center ;" src="../img/icons/instagram.svg" alt=""> </a>
+                    <a href="#"> <img style="text-align: center ;" src="../img/icons/twitter.svg" alt=""> </a>
+
                 </div>
 
 
@@ -123,9 +123,9 @@
         </div>
 
         <div class="conteinerproduct">
-            
-                <h2>Productos relacionadados</h2>
-            
+
+            <h2>Productos relacionadados</h2>
+
 
             <div class="cont_img_mas2">
                 <div class="colum_img_mas2">

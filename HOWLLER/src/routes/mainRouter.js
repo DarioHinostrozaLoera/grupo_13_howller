@@ -1,22 +1,19 @@
-//Import express and router
+// ************ Require's ************
 const express = require('express');
 const router = express.Router();
 
-//Import Controllers
+// ************ Controller Require ************
 const mainController = require('../controllers/mainController');
 
 /*GET Home Page*/
 router.get('/', mainController.index);
-/*GET Mome Page Detail Product*/
-router.get('/detalle/:productId/', mainController.detail)
+
 /*GET Login Page*/
 router.get('/login', mainController.login);
-/*GET Cart Page*/
-router.get('/cart/:productId?/', mainController.cart);
-/*GET Add Form or edit Page*/
-router.get('/form', mainController.form);
-/*GET Generic Categorie*/
-router.get('/categorie', mainController.categorie);
+
+/* Search */
+// router.get('/search', mainController.search);
 
 
+// ************ DON'T TOUCH FROM HERE ************
 module.exports = router;

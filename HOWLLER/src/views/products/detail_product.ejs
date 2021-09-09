@@ -105,24 +105,21 @@
 
                 </div>
 
-                <div class= "edit-delete">
-                    <a href="#">
+                <div class="edit-delete">
+                    <a href="/products/edit/<%= playera.id %>">
                         <button class="button-edit">Editar</button>
                     </a>
-
-                    <a href="#">
+                    <!--Modificar Action & Method para delete :D-->
+                    <form action="/" method="get">
                         <button class="button-delete">eliminar</button>
-                    </a>
+                    </form>
+
                 </div>
 
 
-
-
-
-
                 <div class="h2_p">
-                    <h2>DESCRIPCIÓN</h3>
-                        <p><%= playera.descripcion %></p>
+                    <h2>DESCRIPCIÓN</h2>
+                    <p><%= playera.descripcion %></p>
                 </div>
 
                 <div class="compartir">

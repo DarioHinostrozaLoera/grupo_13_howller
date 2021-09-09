@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/modificar_product.css">
+
+    <title>Howller</title>
+</head>
+<body>
+<!-- HEADER-->
+<%- include('../partials/header') %>
+
+<main>
+
+    <div class="modificar">
+
+        <h2>Editar producto</h2>
+
+        <form action="/" method="get">
+
+            <div class="ctrl-modificar product ">
+
+                <input type="text" id="name" name="producto" placeholder="Nombre del producto"
+                       value=" <%= editProduct.titulo %> "
+                       required>
+            </div>
+            <div class="ctrl-modificar descrip">
+                <input type="text" id="des" name="des" placeholder="Descripción"
+                       value=" <%= editProduct.descripcion %> " required>
+            </div>
+
+            <div class="ctrl-modificar imagen">
+                <label for="file-upload" class="ctrl-modificar custom-file-upload">
+                    <i class="fa fa-cloud-upload"></i> Imagen del producto
+                </label>
+                <input id="file-upload" name="file-upload" type="file" accept="image/png, image/jpeg, image/jpg"/>
+            </div>
+
+            <div class="ctrl-modificar categoria">
+                <select class="ctrl-agregar selectalla" name="talla" id="talla" required>
+                    <option value="0"><%= editProduct.categoria %></option>
+                    <option value="hombres">Hombres</option>
+                    <option value="mujeres">Mujeres</option>
+                    <option value="ninas">Niñas</option>
+                    <option value="ninos">Niños</option>
+                    <option value="ofertas">Ofertas</option>
+
+                </select>
+            </div>
+
+            <!--  <div class="ctrl-modificar talla">
+                  <input type="text" id="talla" name="talla" placeholder="Talla" required>
+              </div>-->
+            <div class="ctrl-modificar color">
+                <input type="text" id="color" name="color" placeholder="Color" value="<%= editProduct.color %>"
+                       required>
+            </div>
+            <div class="ctrl-modificar marca">
+                <input type="text" id="status" name="status" placeholder="Status" value="<%= editProduct.status %>"
+                       required>
+            </div>
+
+            <div class="ctrl-modificar precio">
+                <input type="number" id="precio" name="precio" placeholder="precio" value="<%= editProduct.precio %>"
+                       required>
+            </div>
+
+            <div class="ctrl-modificar">
+                <input class="btn-modificar" type="submit" value="Modificar">
+            </div>
+        </form>
+    </div>
+
+</main>
+
+</body>
+
+<!-- FOOTER-->
+<%- include('../partials/footer') %>
+
+</html>

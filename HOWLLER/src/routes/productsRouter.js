@@ -9,9 +9,8 @@ const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, path.join(__dirname, '../../public/img/products'));
     }, filename: (req, file, cb) => {
-        const newFilename = 'multer-' + Date.now() + path.extname(file.originalname);
+        const newFilename = 'img-' + Date.now() + path.extname(file.originalname);
         cb(null, newFilename);
-
     }
 });
 
@@ -24,8 +23,6 @@ const productsController = require('../controllers/productsController');
 router.get('/detalle/:productId/', productsController.detail)
 /*GET Cart Page*/
 router.get('/cart/:productId?/', productsController.cart);
-/*GET Add Form or edit Page*/
-router.get('/form', productsController.form);
 /*GET Men Categorie*/
 router.get('/hombres', productsController.hombres);
 /*GET Women Categorie*/
@@ -39,10 +36,13 @@ router.get('/ofertas', productsController.ofertas);
 /*GET All Categorie*/
 router.get('/todos', productsController.todos);
 
-
+/*GET Add Form or edit Page*/
+router.get('/create/', productsController.create);
 /*POST Create Product Gregorio*/
 
+
 /*PUT or Patch Update product Dario*/
+router.get('/edit/:id', productsController.edit);
 
 /*Delete delete product Oscar */
 

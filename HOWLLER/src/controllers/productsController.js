@@ -34,31 +34,36 @@ const mainController = {
         let playeraC = listaProductos.find((playera) => playera.id == req.params.productId);
         res.render('./products/cart', {playeraC: playeraC});
     },
-    form: (req, res) => {
-        res.render('./users/forms');
-    },
-    hombres: (req,res) => {
+    hombres: (req, res) => {
         let clase = listaProductos.filter((playera) => playera.categoria == "hombres");
-        res.render ('./products/hombres', {clase:clase}) 
+        res.render('./products/hombres', {clase: clase})
     },
-    mujeres: (req,res) => {
+    mujeres: (req, res) => {
         let clase = listaProductos.filter((playera) => playera.categoria == "mujeres");
-        res.render ('./products/mujeres', {clase:clase}) 
+        res.render('./products/mujeres', {clase: clase})
     },
-    ninas: (req,res) => {
+    ninas: (req, res) => {
         let clase = listaProductos.filter((playera) => playera.categoria == "niñas");
-        res.render ('./products/ninas', {clase:clase}) 
+        res.render('./products/ninas', {clase: clase})
     },
-    ninos: (req,res) => {
+    ninos: (req, res) => {
         let clase = listaProductos.filter((playera) => playera.categoria == "niños");
-        res.render ('./products/ninos', {clase:clase}) 
+        res.render('./products/ninos', {clase: clase})
     },
-    ofertas: (req,res) => {
+    ofertas: (req, res) => {
         let clase = listaProductos.filter((playera) => playera.status == "en oferta");
-        res.render ('./products/ofertas', {clase:clase}) 
+        res.render('./products/ofertas', {clase: clase})
     },
-    todos: (req,res) => {
-        res.render ('./products/todos', {clase:listaProductos}) 
+    todos: (req, res) => {
+        res.render('./products/todos', {clase: listaProductos})
+    },
+    create: (req, res) => {
+        res.render('./users/add_product');
+    },
+    edit: (req, res) => {
+        let id = req.params.id;
+        let editProduct = listaProductos.find((product) => product.id == id);
+        res.render('./users/edit_product', {editProduct});
     }
 }
 

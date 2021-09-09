@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/det_pro.css">
+    <link rel="stylesheet" href="/css/delete.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/howllericon-01.png">
 
     <title>Howller</title>
@@ -110,11 +111,42 @@
                         <button class="button-edit">Editar</button>
                     </a>
                     <!--Modificar Action & Method para delete :D-->
-                    <form action="/" method="get">
-                        <button class="button-delete">eliminar</button>
-                    </form>
+                  
+                        <button id="button_delete">eliminar</button>
+                  
 
                 </div>
+
+                <div class="modale_containere" id="modale_containere">
+                    <div class="modale">
+                        <h1>¡atención!</h1>
+                        <p>
+                            ¿Estas seguro que deseas eliminar este producto?
+                            Una vez eliminado no podrá recuperarse.
+                        </p>
+                        <div class="btns-container">
+                            <button id ="cancelare"> cancelar</button>
+                            <button id="closee"> eliminar producto</button> 
+                        </div>
+                        
+                        
+
+                    </div>
+                </div>
+
+                <script>
+                    const opene = document.getElementById('button_delete');
+                    const modale_containere = document.getElementById('modale_containere');
+                    const cancelare = document.getElementById('cancelare');
+
+                    opene.addEventListener('click', () => {
+                    modale_containere.classList.add('showme');  
+                    });
+
+                    cancelare.addEventListener('click', () => {
+                    modale_containere.classList.remove('showme');
+                    });
+                </script>
 
 
                 <div class="h2_p">

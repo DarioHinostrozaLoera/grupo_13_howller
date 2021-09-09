@@ -1,23 +1,4 @@
-/*
-const categorias =[
-    {
-        categoria:"Hombres"
-    },
-    {
-        categoria:"Mujeres"
-    },
-    {
-        categoria:"Niñas"
-    },
-    {
-        categoria:"Niños"
-    },
-    {
-        categoria:"Ofertas"
-    },
 
-
-] */
 const fs = require('fs');
 const path = require('path');
 
@@ -64,7 +45,13 @@ const mainController = {
         let id = req.params.id;
         let editProduct = listaProductos.find((product) => product.id == id);
         res.render('./users/edit_product', {editProduct});
+    },
+    destroy:(req,res)=>{
+        let id= req.params.id;
+        let finalProducts = products.filter(product=>product.id != id);
+        fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts,null,' '));
+        res.render('/');
     }
-}
+};
 
 module.exports = mainController;

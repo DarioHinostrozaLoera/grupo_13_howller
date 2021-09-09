@@ -7,7 +7,8 @@ const listaProductos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const mainController = {
     index: (req, res) => {
-        res.render('./products/home', {catalogo: listaProductos});
+        let clase = listaProductos.filter((playera) => playera.status == "nuevo");
+        res.render ('./products/home', {clase:clase}) 
     },
     login: (req, res) => {
         res.render('./users/login')
@@ -17,5 +18,7 @@ const mainController = {
     * } */
 
 }
+
+
 
 module.exports = mainController;

@@ -30,10 +30,13 @@
             <img src="/img/products/slider01.jpg" alt="">
 
         </figure>
-
     </div>
+    
+    
+    <div id="title" > Lo más nuevo </div>
 
-    <% catalogo.forEach (playera => { %>
+
+    <% clase.forEach (playera => { %>
 
         <div class="product-container">
             <a href="products/detalle/<%= playera.id %>">
@@ -41,6 +44,10 @@
             </a>
             <span>
                     <%= playera.titulo.toUpperCase() %>
+                </span>
+
+                <span>
+                    <%= playera.categoria.toUpperCase() %>
                 </span>
 
             <div class="sizes">

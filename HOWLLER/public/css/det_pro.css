@@ -1,3 +1,8 @@
+a{
+    color: none;
+    text-decoration: none;
+}
+
 .conteinerproduct{
     width: auto;
     height: auto;
@@ -335,6 +340,7 @@
 .modal{
     width: 80%;
     margin-bottom: 15px;
+
 }
 .modal img{
     margin-top: 15px;
@@ -344,3 +350,30 @@
     position: relative;
 }
 /*SIZES GUIDE*/
+
+.edit-delete{
+    
+    padding: 4% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-delete{
+    background-color: rgb(255, 135, 65);
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.button-edit{
+    background-color: #32E0C4;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+}

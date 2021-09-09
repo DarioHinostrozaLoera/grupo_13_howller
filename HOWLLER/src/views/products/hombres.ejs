@@ -18,14 +18,14 @@
 <!-- HEADER-->
 <%- include('../partials/header') %>
 
-<div class="categorias"> 🔥 ¡Checa lo que tenemos para ti! 🔥 </div>
+<div class="categorias"> Playeras para Hombres </div>
 
 <main>
 
-    <% catalogo.forEach (playera => { %>
+    <% clase.forEach (playera => { %>
 
         <div class="product-container">
-            <a href="/detalle/<%= playera.id %>">
+            <a href="./detalle/<%= playera.id %>">
                 <img src="<%= playera.img %>" alt="">
             </a>
             <span>

@@ -26,8 +26,19 @@ router.get('/detalle/:productId/', productsController.detail)
 router.get('/cart/:productId?/', productsController.cart);
 /*GET Add Form or edit Page*/
 router.get('/form', productsController.form);
-/*GET Generic Categorie*/
-router.get('/categorie', productsController.categorie);
+/*GET Men Categorie*/
+router.get('/hombres', productsController.hombres);
+/*GET Women Categorie*/
+router.get('/mujeres', productsController.mujeres);
+/*GET Girls Categorie*/
+router.get('/ninas', productsController.ninas);
+/*GET Boys Categorie*/
+router.get('/ninos', productsController.ninos);
+/*GET Sales Categorie*/
+router.get('/ofertas', productsController.ofertas);
+/*GET All Categorie*/
+router.get('/todos', productsController.todos);
+
 
 /*POST Create Product Gregorio*/
 

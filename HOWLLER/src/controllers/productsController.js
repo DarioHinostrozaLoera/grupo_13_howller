@@ -37,11 +37,29 @@ const mainController = {
     form: (req, res) => {
         res.render('./users/forms');
     },
-    categorie: (req, res) => {
-        /*  let seccion = categorias.find ((secc) => secc.categoria == req.params.nomCategoria) */
-        res.render('./products/categorie', {catalogo: listaProductos}, /* {seccion : seccion} */);
+    hombres: (req,res) => {
+        let clase = listaProductos.filter((playera) => playera.categoria == "hombres");
+        res.render ('./products/hombres', {clase:clase}) 
+    },
+    mujeres: (req,res) => {
+        let clase = listaProductos.filter((playera) => playera.categoria == "mujeres");
+        res.render ('./products/mujeres', {clase:clase}) 
+    },
+    ninas: (req,res) => {
+        let clase = listaProductos.filter((playera) => playera.categoria == "niñas");
+        res.render ('./products/ninas', {clase:clase}) 
+    },
+    ninos: (req,res) => {
+        let clase = listaProductos.filter((playera) => playera.categoria == "niños");
+        res.render ('./products/ninos', {clase:clase}) 
+    },
+    ofertas: (req,res) => {
+        let clase = listaProductos.filter((playera) => playera.status == "en oferta");
+        res.render ('./products/ofertas', {clase:clase}) 
+    },
+    todos: (req,res) => {
+        res.render ('./products/todos', {clase:listaProductos}) 
     }
-
 }
 
 module.exports = mainController;

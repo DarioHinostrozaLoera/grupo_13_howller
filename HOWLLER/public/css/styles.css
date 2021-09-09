@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+a{
+    color: none;
+    text-decoration: none;
+}
+
 body{
     margin: 0px; 
     padding: 0px; 
@@ -172,6 +177,10 @@ nav .mainMenu .closeMenu , .icons i {
     font-size: 2rem;
     display: none;
     cursor: pointer;
+}
+
+.icons {
+    padding-top: 50px;
 }
 .fa-facebook:hover {color: rgb(0, 110, 255);}
 .fa-twitter:hover {color: rgb(86, 154, 243);}
@@ -371,18 +380,23 @@ margin: 0 12px;
 
 
 .categorias{
+    border: #FFC947 double 5px;
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
     font-weight: bolder;
+    padding: 10px 0;
+    margin: 4% 0;
     padding: 20px 0;
 }
 
 @media (min-width: 1279px){
     .categorias{
+        border: none;
         display: flex;
         justify-content: center;
         font-weight: bolder;
-        padding: 40px 0;
-        font-size: 1.5rem;
+        padding: 20px 0;
+        font-size: 2rem;
     }
 }

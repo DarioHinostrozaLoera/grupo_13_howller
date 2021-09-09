@@ -6,7 +6,6 @@ main{
 
 #slider {
     overflow: hidden;
-    padding-bottom: 4%;
 }
 #slider figure{
     position: relative;
@@ -110,3 +109,27 @@ float: left;
         width: calc((100% - 30px) / 4);
 }
 }
+
+#title{
+    border: #FFC947 double 5px;
+    /* background-color:#32E0C4; */
+    width: 100%;
+    text-align: center;
+    font-weight:bolder;
+    padding: 10px 0;
+    margin: 4% 0;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1279px){
+    #title{
+        border: none;
+        text-align: center;
+        font-weight:bolder;
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+
+}
+
+

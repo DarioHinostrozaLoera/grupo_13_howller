@@ -39,7 +39,7 @@ router.get('/todos', productsController.todos);
 /*GET Add Form or edit Page*/
 router.get('/create/', productsController.create);
 /*POST Create Product Gregorio*/
-
+router.patch('/edit/:id',upload.single('img'), productsController.update);
 
 /*PUT or Patch Update product Dario*/
 router.get('/edit/:id', productsController.edit);

@@ -46,6 +46,30 @@ const mainController = {
         let editProduct = listaProductos.find((product) => product.id == id);
         res.render('./users/edit_product', {editProduct});
     },
+    update:(req,res)=>{
+        let id = req.params.id;
+		let editProduct = listaProductos.find(product => product.id == id)
+
+		editProduct = {
+			id: editProduct.id,
+			img: editProduct.img,
+            det01: "/img/products/03/img_dafult.png",
+            det02: "/img/products/03/img_dafult.png",
+            det03: "/img/products/03/img_dafult.png",
+            det04: "/img/products/03/img_dafult.png",
+            ...req.body
+		};
+
+		let newProducts = listaProductos.map(product =>{
+			if(product.id == editProduct.id){
+				return product = {...editProduct}
+			}
+			return product
+		});
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+		res.redirect('/');
+    },
 	destroy : (req, res) => {
 		let id = req.params.id
 		const productoAEliminar = listaProductos.findIndex(producto => id == producto.id)

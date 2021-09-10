@@ -449,6 +449,7 @@ a {
   }
 
   #closee{
+      cursor: pointer;
       background-color: rgb(255, 135, 65);;
       color: white;
       padding: 10px;
@@ -457,6 +458,7 @@ a {
   }
 
   #cancelare{
+    cursor: pointer;
     background-color: rgb(50, 118, 219);
     color: white;
     padding: 10px;

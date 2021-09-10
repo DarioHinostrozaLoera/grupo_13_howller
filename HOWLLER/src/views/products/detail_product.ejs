@@ -126,7 +126,11 @@
                         </p>
                         <div class="btns-container">
                             <button id ="cancelare"> cancelar</button>
-                            <button id="closee"> eliminar producto</button> 
+
+                            <form action="/products/delete/<%= playera.id %>?_method=DELETE" method="POST">
+                                <button type="submit" id="closee"> eliminar producto</button> 
+                            </form>
+                            
                         </div>
                         
                         

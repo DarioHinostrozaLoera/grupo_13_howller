@@ -46,12 +46,17 @@ const mainController = {
         let editProduct = listaProductos.find((product) => product.id == id);
         res.render('./users/edit_product', {editProduct});
     },
-    destroy:(req,res)=>{
-        let id= req.params.id;
-        let finalProducts = products.filter(product=>product.id != id);
-        fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts,null,' '));
-        res.render('/');
-    }
+	destroy : (req, res) => {
+		let id = req.params.id
+		const productoAEliminar = listaProductos.findIndex(producto => id == producto.id)
+		if(productoAEliminar >= 0)
+		{
+			listaProductos.splice(productoAEliminar, 1)
+			fs.writeFileSync(productsFilePath,JSON.stringify(listaProductos,null,2),'utf-8')
+			res.redirect('/')
+		} else
+			res.redirect('/')
+	}
 };
 
 module.exports = mainController;

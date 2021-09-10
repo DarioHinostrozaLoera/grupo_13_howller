@@ -1,5 +1,19 @@
 [
   {
+    "id": 0,
+    "img": "/img/products/00/00-1.jpg",
+    "det01": "/img/products/00/00-2.png",
+    "det02": "/img/products/00/00-3.png",
+    "det03": "/img/products/00/00-4.png",
+    "det04": "/img/products/00/00-5.png",
+    "titulo": "Eliminar :( ",
+    "precio": "269",
+    "color": "rosa",
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
+    "categoria": "mujeres",
+    "status": ""
+  },
+  {
     "id": 1,
     "img": "/img/products/01/01-1.jpg",
     "det01": "/img/products/01/01-2.png",
@@ -335,4 +349,5 @@
     "categoria": "hombres",
     "status": "en oferta"
   }
+
 ]

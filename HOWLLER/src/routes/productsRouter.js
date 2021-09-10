@@ -45,5 +45,6 @@ router.get('/create/', productsController.create);
 router.get('/edit/:id', productsController.edit);
 
 /*Delete delete product Oscar */
+router.delete('/delete/:id', productsController.destroy);
 
 module.exports = router;

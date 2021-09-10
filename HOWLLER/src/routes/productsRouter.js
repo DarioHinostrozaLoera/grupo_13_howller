@@ -37,12 +37,13 @@ router.get('/ofertas', productsController.ofertas);
 router.get('/todos', productsController.todos);
 
 /*GET Add Form or edit Page*/
-router.get('/create/', productsController.create);
 /*POST Create Product Gregorio*/
-router.patch('/edit/:id',upload.single('img'), productsController.update);
+router.get('/create/', productsController.create);
+router.post('/', upload.single('img'), productsController.store);
 
 /*PUT or Patch Update product Dario*/
 router.get('/edit/:id', productsController.edit);
+router.patch('/edit/:id', upload.single('img'), productsController.update);
 
 /*Delete delete product Oscar */
 router.delete('/delete/:id', productsController.destroy);

@@ -23,7 +23,7 @@
 
         <h2>Editar producto</h2>
 
-        <form action="/" method="get">
+        <form action="/products/edit/<%= editProduct.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
 
             <div class="ctrl-modificar product ">
 

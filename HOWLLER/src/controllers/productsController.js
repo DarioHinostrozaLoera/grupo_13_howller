@@ -7,7 +7,8 @@ const listaProductos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const mainController = {
     // Pages & Categories
     detail: (req, res) => {
-        let playera = listaProductos.find((playera) => playera.id == req.params.productId);
+        let id = req.params.productId;
+        let playera = listaProductos.find((playera) => playera.id == id);
         res.render('./products/detail_product', {playera: playera});
     },
     cart: (req, res) => {
@@ -119,7 +120,7 @@ const mainController = {
         } else {
             res.redirect('/');
         }
-        
+
 
     }
 };

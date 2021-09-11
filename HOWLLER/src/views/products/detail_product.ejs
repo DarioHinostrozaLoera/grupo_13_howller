@@ -107,16 +107,92 @@
                 </div>
 
                 <div class="edit-delete">
-                    <a href="/products/edit/<%= playera.id %>">
+                    <!--<a href="/products/edit/<%= playera.id %>">
                         <button class="button-edit">Editar</button>
-                    </a>
-                    <!--Modificar Action & Method para delete :D-->
-                  
-                        <button id="button_delete">eliminar</button>
-                  
-
+                    </a>-->
+                    <button id="button_edit">Editar</button>
+                    <button id="button_delete">Eliminar</button>
                 </div>
+                <!--Edit-->
+                <div class="modale_containere" id="modale_containere_edit">
+                    <div class="modaleEdit">
+                        <button id="cancelare-edit">X</button>
+                        <h1>Editar Producto</h1>
 
+                        <div class="modificar">
+                            <form action="/products/edit/<%= playera.id %>?_method=PATCH" method="POST"
+                                  enctype="multipart/form-data">
+
+                                <div class="ctrl-modificar product ">
+                                    <input type="text" id="titulo" name="titulo" placeholder="Nombre del producto"
+                                           value="<%= playera.titulo %>"
+                                           required>
+                                </div>
+                                <div class="ctrl-modificar descrip">
+                                    <input type="text" id="descripcion" name="descripcion" placeholder="Descripción"
+                                           value="<%= playera.descripcion %>" required>
+                                </div>
+                                <div class="ctrl-modificar imagen">
+                                    <label for="img" class="ctrl-modificar custom-file-upload">
+                                        <i class="fa fa-cloud-upload"></i> Imagen del producto
+                                    </label>
+                                    <input id="img" name="img" type="file" accept="image/png, image/jpeg, image/jpg"/>
+                                </div>
+                                <div class="ctrl-modificar categoria">
+                                    <select class="ctrl-agregar selectalla" name="categoria" id="categoria" required>
+                                        <option value="0"><%= playera.categoria %></option>
+                                        <option value="hombres">Hombres</option>
+                                        <option value="mujeres">Mujeres</option>
+                                        <option value="ninas">Niñas</option>
+                                        <option value="ninos">Niños</option>
+                                        <option value="ofertas">Ofertas</option>
+                                    </select>
+                                </div>
+
+                                <!--  <div class="ctrl-modificar talla">
+                                      <input type="text" id="talla" name="talla" placeholder="Talla" required>
+                                  </div>-->
+                                <div class="ctrl-modificar color">
+                                    <input type="text" id="color" name="color" placeholder="Color"
+                                           value="<%= playera.color %>"
+                                           required>
+                                </div>
+                                <div class="ctrl-modificar marca">
+                                    <input type="text" id="status" name="status" placeholder="Status"
+                                           value="<%= playera.status %>"
+                                           required>
+                                </div>
+
+                                <div class="ctrl-modificar precio">
+                                    <input type="number" id="precio" name="precio" placeholder="precio"
+                                           value="<%= playera.precio %>"
+                                           required>
+                                </div>
+
+
+                                <div class="ctrl-modificar"><!--btns-container / ctrl-modificar-->
+                                    <input class="btn-modificar" type="submit" value="Modificar">
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+                <script>
+                    //Edit
+                    const openeEdit = document.getElementById('button_edit');
+                    const modale_containere_edit = document.getElementById('modale_containere_edit');
+                    const cancelare_edit = document.getElementById('cancelare-edit');
+
+                    openeEdit.addEventListener('click', () => {
+                        modale_containere_edit.classList.add('showmeEdit');
+                    });
+                    cancelare_edit.addEventListener('click', () => {
+                        modale_containere_edit.classList.remove('showmeEdit');
+                    });
+                </script>
+                <!--Delete-->
                 <div class="modale_containere" id="modale_containere">
                     <div class="modale">
                         <h1>¡atención!</h1>
@@ -125,30 +201,28 @@
                             Una vez eliminado no podrá recuperarse.
                         </p>
                         <div class="btns-container">
-                            <button id ="cancelare"> cancelar</button>
+                            <button id="cancelare"> cancelar</button>
 
                             <form action="/products/delete/<%= playera.id %>?_method=DELETE" method="POST">
-                                <button type="submit" id="closee"> eliminar producto</button> 
+                                <button type="submit" id="closee"> eliminar producto</button>
                             </form>
-                            
-                        </div>
-                        
-                        
 
+                        </div>
                     </div>
                 </div>
 
                 <script>
+                    //Delete
                     const opene = document.getElementById('button_delete');
                     const modale_containere = document.getElementById('modale_containere');
                     const cancelare = document.getElementById('cancelare');
 
                     opene.addEventListener('click', () => {
-                    modale_containere.classList.add('showme');  
+                        modale_containere.classList.add('showme');
                     });
 
                     cancelare.addEventListener('click', () => {
-                    modale_containere.classList.remove('showme');
+                        modale_containere.classList.remove('showme');
                     });
                 </script>
 

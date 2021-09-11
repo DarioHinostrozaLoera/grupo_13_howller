@@ -395,7 +395,7 @@ a {
 
 }
 
-.button-edit {
+#button_edit {
     cursor: pointer;
     background-color: #32E0C4;
     padding: 10px;
@@ -424,7 +424,12 @@ a {
 .showme {
     pointer-events: auto;
     opacity: 1;
-  }
+}
+
+.showmeEdit {
+    pointer-events: auto;
+    opacity: 1;
+}
 
 .modale {
     background-color: white;
@@ -434,47 +439,75 @@ a {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
-  
-  .modale h1 {
+}
+
+.modaleEdit {
+    background-color: white;
+    width: 1000px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: block;
+    position: relative;
+
+}
+
+.modale h1 {
     margin: 0;
     text-transform: uppercase;
     padding-bottom: 20px;
-  }
-  
-  .modale p {
+}
+
+.modale p {
     opacity: 0.7;
     font-size: 14px;
     padding-bottom: 20px;
-  }
+}
 
-  #closee{
-      cursor: pointer;
-      background-color: rgb(255, 135, 65);;
-      color: white;
-      padding: 10px;
-      border:none;
-      text-transform: uppercase;
-  }
+#closee {
+    cursor: pointer;
+    background-color: rgb(255, 135, 65);;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+}
 
-  #cancelare{
+#cancelare {
     cursor: pointer;
     background-color: rgb(50, 118, 219);
     color: white;
     padding: 10px;
-    border:none;
+    border: none;
     text-transform: uppercase;
 }
 
-.btns-container{
+#cancelare-edit {
+    cursor: pointer;
+    background-color: rgb(50, 118, 219);
+    color: white;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    /*align-self: flex-start;*/
+    position: absolute;
+    left: 90%;
+    top: 5%;
+    display: block;
+    /*align-self: auto;*/
+}
+
+.btns-container {
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
 }
 
-@media (max-width: 479px){
-    .btns-container{
+@media (max-width: 479px) {
+    .btns-container {
         display: flex;
         gap: 20px;
         justify-content: center;
@@ -489,5 +522,209 @@ a {
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         text-align: center;
-      }
+    }
+}
+
+/*Edit Product From Styles*/
+
+.interests, .ctrl-modificar, .profile {
+    margin-bottom: 15px;
+}
+
+.interests, .profile, .ctrl-modificar label {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-style: italic;
+    display: block;
+
+}
+
+.modificar form {
+    background-color: rgb(224, 219, 212);
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 10px;
+    border-inline: unset;
+}
+
+.modificar h2 {
+
+    text-align: center;
+
+}
+
+.ctrl-modificar {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    padding: 10px;
+    width: 20%;
+    border-radius: 5px;
+
+}
+
+.ctrl-modificar input[type="text"]:hover {
+    background-color: rgb(224, 219, 212);
+}
+
+.ctrl-modificar input[type="number"]:hover {
+    background-color: rgb(224, 219, 212);
+}
+
+.descrip {
+    width: 60%;
+}
+
+.product {
+    width: 30%;
+}
+
+.imagen {
+    width: 30%;
+}
+
+.categoria {
+    width: 60%;
+}
+
+.color {
+    width: 30%;
+}
+
+.talla {
+    width: 35%;
+}
+
+.marca {
+    width: 30%;
+}
+
+.precio {
+    width: 30%;
+}
+
+.ctrl-modificar input {
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: blue, 0.5s, blue, 0.5s;
+}
+
+.btn-modificar {
+    align-items: center;
+    width: 100%;
+    background-color: #f2af2d;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* transition: blue, 0.5s, blue, 0.5s; */
+}
+
+.btn-modificar:hover {
+    background-color: #000000;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-modificar-red {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.busqueda {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .ctrl-modificar {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        width: 80%;
+        border-radius: 5px;
+
+    }
+}
+
+.selectalla {
+    margin: 10px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    line-height: 12px;
+    text-align: center;
+    align-content: center;
+    font-family: "Poppins";
+    font-size: 16px;
+
+}
+
+.selectalla option {
+    border: none;
+    text-align: center;
+    padding: 10px 10px;
+    line-height: 12px;
+
+    font-family: "Poppins";
+    align-items: center;
+
+}
+
+input[type="file"] {
+    display: none;
+
+}
+
+.custom-file-upload {
+    /* border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer; */
+    cursor: pointer;
+    width: 100%;
+    background-color: #fff;
+    color: darkgrey;
+    padding: 13px 13px;
+    line-height: 12px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+footer {
+
+    background-color: #FFC947;
+    width: auto;
+    height: auto;
+
+}
+
+.fcopyright {
+
+    width: auto;
+    height: auto;
+
+    font-size: 20px;
+    padding-top: 10%;
+    text-align: center;
 }

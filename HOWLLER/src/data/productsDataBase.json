@@ -16,16 +16,16 @@
   {
     "id": 2,
     "img": "/img/products/02/02-1.jpg",
-    "det01": "/img/products/02/02-2.png",
-    "det02": "/img/products/02/02-3.png",
-    "det03": "/img/products/02/02-4.png",
-    "det04": "/img/products/02/02-5.png",
+    "det01": "/img/products/default-image.jpg",
+    "det02": "/img/products/default-image.jpg",
+    "det03": "/img/products/default-image.jpg",
+    "det04": "/img/products/default-image.jpg",
     "titulo": "Black Widow",
-    "precio": "249",
-    "color": "rojo",
     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-    "categoria": "hombres",
-    "status": "nuevo"
+    "categoria": "0",
+    "color": "rojo",
+    "status": "nuevo",
+    "precio": "249"
   },
   {
     "id": 3,
@@ -44,16 +44,16 @@
   {
     "id": 4,
     "img": "/img/products/04/04-1.jpg",
-    "det01": "/img/products/04/04-2.png",
-    "det02": "/img/products/04/04-3.png",
-    "det03": "/img/products/04/04-4.png",
-    "det04": "/img/products/04/04-5.png",
+    "det01": "/img/products/default-image.jpg",
+    "det02": "/img/products/default-image.jpg",
+    "det03": "/img/products/default-image.jpg",
+    "det04": "/img/products/default-image.jpg",
     "titulo": "Simpsons Japan",
-    "precio": "149",
-    "color": "azul",
     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-    "categoria": "hombres",
-    "status": "nuevo"
+    "categoria": "0",
+    "color": "azul",
+    "status": "nuevo",
+    "precio": "149"
   },
   {
     "id": 5,

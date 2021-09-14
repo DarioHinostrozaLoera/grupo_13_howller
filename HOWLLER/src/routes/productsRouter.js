@@ -28,9 +28,9 @@ router.get('/hombres', productsController.hombres);
 /*GET Women Categorie*/
 router.get('/mujeres', productsController.mujeres);
 /*GET Girls Categorie*/
-router.get('/ninas', productsController.ninas);
+router.get('/girls', productsController.girls);
 /*GET Boys Categorie*/
-router.get('/ninos', productsController.ninos);
+router.get('/boys', productsController.boys);
 /*GET Sales Categorie*/
 router.get('/ofertas', productsController.ofertas);
 /*GET All Categorie*/

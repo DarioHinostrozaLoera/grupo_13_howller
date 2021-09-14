@@ -150,7 +150,7 @@
   "precio": "255",
   "color": "gris",
   "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-  "categoria": "niñas",
+  "categoria": "girls",
   "status": "nuevo"
  },
  {
@@ -164,7 +164,7 @@
   "precio": "255",
   "color": "amarillo",
   "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-  "categoria": "niñas",
+  "categoria": "girls",
   "status": "nuevo"
  },
  {
@@ -178,7 +178,7 @@
   "precio": "255",
   "color": "rosa",
   "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-  "categoria": "niñas",
+  "categoria": "girls",
   "status": ""
  },
  {
@@ -192,7 +192,7 @@
   "precio": "255",
   "color": "blanco",
   "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-  "categoria": "niñas",
+  "categoria": "girls",
   "status": ""
  },
  {
@@ -206,7 +206,7 @@
   "precio": "255",
   "color": "blanco",
   "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-  "categoria": "niños",
+  "categoria": "boys",
   "status": "en oferta"
  },
  {
@@ -220,7 +220,7 @@
   "precio": "255",
   "color": "negro",
   "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-  "categoria": "niños",
+  "categoria": "boys",
   "status": "nuevo"
  },
  {
@@ -234,7 +234,7 @@
   "precio": "255",
   "color": "gris",
   "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-  "categoria": "niños",
+  "categoria": "boys",
   "status": ""
  },
  {
@@ -248,7 +248,7 @@
   "precio": "255",
   "color": "gris",
   "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
-  "categoria": "niños",
+  "categoria": "boys",
   "status": "nuevo"
  },
  {

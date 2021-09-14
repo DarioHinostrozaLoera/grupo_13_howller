@@ -23,13 +23,13 @@ const mainController = {
         let clase = listaProductos.filter((playera) => playera.categoria == "mujeres");
         res.render('./products/mujeres', {clase: clase})
     },
-    ninas: (req, res) => {
-        let clase = listaProductos.filter((playera) => playera.categoria == "niñas");
-        res.render('./products/ninas', {clase: clase})
+    girls: (req, res) => {
+        let clase = listaProductos.filter((playera) => playera.categoria == "girls");
+        res.render('./products/girls', {clase: clase})
     },
-    ninos: (req, res) => {
-        let clase = listaProductos.filter((playera) => playera.categoria == "niños");
-        res.render('./products/ninos', {clase: clase})
+    boys: (req, res) => {
+        let clase = listaProductos.filter((playera) => playera.categoria == "boys");
+        res.render('./products/boys', {clase: clase})
     },
     ofertas: (req, res) => {
         let clase = listaProductos.filter((playera) => playera.status == "en oferta");

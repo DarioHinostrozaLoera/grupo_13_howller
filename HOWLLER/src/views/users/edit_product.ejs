@@ -48,10 +48,9 @@
                     <option value="0"><%= editProduct.categoria %></option>
                     <option value="hombres">Hombres</option>
                     <option value="mujeres">Mujeres</option>
-                    <option value="ninas">Niñas</option>
-                    <option value="ninos">Niños</option>
-                    <option value="ofertas">Ofertas</option>
-
+                    <option value="girls">Niñas</option>
+                    <option value="boys">Niños</option>
+                    <!--<option value="ofertas">Ofertas</option>-->
                 </select>
             </div>
 
@@ -62,10 +61,20 @@
                 <input type="text" id="color" name="color" placeholder="Color" value="<%= editProduct.color %>"
                        required>
             </div>
-            <div class="ctrl-modificar marca">
+            <!--   <div class="ctrl-modificar marca">
                 <input type="text" id="status" name="status" placeholder="Status" value="<%= editProduct.status %>"
                        required>
-            </div>
+            </div>-->
+
+            <!--<div class="ctrl-modificar marca">
+                <select class="ctrl-agregar selectalla" name="status" id="status" required>
+                    <option value="0"><%= editProduct.status %></option>
+                    <option value="en oferta">En Oferta</option>
+                    <option value="nuevo">Nuevo</option>
+                    <option value="mujeres">Mujeres</option>
+                    <option value="mas vendido">Más vendido</option>
+                </select>
+            </div>-->
 
             <div class="ctrl-modificar precio">
                 <input type="number" id="precio" name="precio" placeholder="precio" value="<%= editProduct.precio %>"

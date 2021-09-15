@@ -59,64 +59,64 @@
                 }
             </script>
 
-                  <!-- display productos en móviles -->
-                        <div class="container-slider">
-                            <div class="slider" id= "slider">
-                                <div class="slider__section"> <img class="slider__img" src="<%= playera.img %>" alt=""> </div>
-                                <div class="slider__section"> <img class="slider__img" src="<%= playera.det01 %>" alt=""> </div>
-                                <div class="slider__section"> <img class="slider__img" src="<%= playera.det02 %>" alt=""> </div>
-                                <div class="slider__section"> <img class="slider__img" src="<%= playera.det03 %>" alt=""> </div>
-                                <div class="slider__section"> <img class="slider__img" src="<%= playera.det04 %>" alt=""> </div>
+            <!-- display productos en móviles -->
+            <div class="container-slider">
+                <div class="slider" id="slider">
+                    <div class="slider__section"><img class="slider__img" src="<%= playera.img %>" alt=""></div>
+                    <div class="slider__section"><img class="slider__img" src="<%= playera.det01 %>" alt=""></div>
+                    <div class="slider__section"><img class="slider__img" src="<%= playera.det02 %>" alt=""></div>
+                    <div class="slider__section"><img class="slider__img" src="<%= playera.det03 %>" alt=""></div>
+                    <div class="slider__section"><img class="slider__img" src="<%= playera.det04 %>" alt=""></div>
 
-                            </div>
-                            <div class="slider__btn slider__btn--right" id="btn-right" > <i  class="fas fa-chevron-circle-right"></i> </div>
-                            <div class="slider__btn slider__btn--left" id="btn-left" > <i  class="fas fa-chevron-circle-left"></i> </div>
-                        </div>
-                                 <script>
-                                    const slider = document.querySelector("#slider");
-                                    let sliderSection = document.querySelectorAll (".slider__section");
-                                    let sliderSectionLast = sliderSection[sliderSection.length -1];
+                </div>
+                <div class="slider__btn slider__btn--right" id="btn-right"><i class="fas fa-chevron-circle-right"></i>
+                </div>
+                <div class="slider__btn slider__btn--left" id="btn-left"><i class="fas fa-chevron-circle-left"></i>
+                </div>
+            </div>
+            <script>
+                const slider = document.querySelector("#slider");
+                let sliderSection = document.querySelectorAll(".slider__section");
+                let sliderSectionLast = sliderSection[sliderSection.length - 1];
 
-                                    const btnLeft = document.querySelector("#btn-left");
-                                    const btnRight = document.querySelector("#btn-right");
+                const btnLeft = document.querySelector("#btn-left");
+                const btnRight = document.querySelector("#btn-right");
 
-                                    slider.insertAdjacentElement('afterbegin' , sliderSectionLast);
+                slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
-                                    function Next(){
-                                    let sliderSectionFirst = document.querySelectorAll (".slider__section") [0];
-                                    slider.style.marginLeft = "-200%";
-                                    slider.style.transition = "all 0.5s";
-                                    setTimeout(function(){
-                                    slider.style.transition = "none";
-                                    slider.insertAdjacentElement ('beforeend' , sliderSectionFirst);
-                                    slider.style.marginLeft = "-100%";
-                                    },500);
-                                    }
+                function Next() {
+                    let sliderSectionFirst = document.querySelectorAll(".slider__section") [0];
+                    slider.style.marginLeft = "-200%";
+                    slider.style.transition = "all 0.5s";
+                    setTimeout(function () {
+                        slider.style.transition = "none";
+                        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+                        slider.style.marginLeft = "-100%";
+                    }, 500);
+                }
 
-                                    function Prev(){
-                                    let sliderSection = document.querySelectorAll (".slider__section");
-                                    let sliderSectionLast = sliderSection[sliderSection.length -1];
-                                    slider.style.marginLeft = "0";
-                                    slider.style.transition = "all 0.5s";
-                                    setTimeout(function(){
-                                    slider.style.transition = "none";
-                                    slider.insertAdjacentElement('afterbegin' , sliderSectionLast);
-                                    slider.style.marginLeft = "-100%";
-                                    },500);
-                                    }
+                function Prev() {
+                    let sliderSection = document.querySelectorAll(".slider__section");
+                    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+                    slider.style.marginLeft = "0";
+                    slider.style.transition = "all 0.5s";
+                    setTimeout(function () {
+                        slider.style.transition = "none";
+                        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+                        slider.style.marginLeft = "-100%";
+                    }, 500);
+                }
 
-                                    btnRight.addEventListener ('click', function(){
-                                    Next();
-                                    });
+                btnRight.addEventListener('click', function () {
+                    Next();
+                });
 
-                                    btnLeft.addEventListener ('click', function(){
-                                    Prev();
-                                    });
-                                </script>
+                btnLeft.addEventListener('click', function () {
+                    Prev();
+                });
+            </script>
 
-                    <!-- /display productos en móviles -->
-
-
+            <!-- /display productos en móviles -->
 
 
             <div class="descipcion_product">
@@ -216,10 +216,19 @@
                                            value="<%= playera.color %>"
                                            required>
                                 </div>
-                                <div class="ctrl-modificar marca">
+                                <!-- <div class="ctrl-modificar marca">
                                     <input type="text" id="status" name="status" placeholder="Status"
                                            value="<%= playera.status %>"
                                            required>
+                                </div>-->
+                                <div class="ctrl-modificar marca">
+                                    <select class="ctrl-agregar selectalla" name="status" id="status" required>
+                                        <option value="0"><%= playera.status %></option>
+                                        <option value="en oferta">En Oferta</option>
+                                        <option value="nuevo">Nuevo</option>
+                                        <option value="mujeres">Mujeres</option>
+                                        <option value="mas vendido">Más vendido</option>
+                                    </select>
                                 </div>
 
                                 <div class="ctrl-modificar precio">

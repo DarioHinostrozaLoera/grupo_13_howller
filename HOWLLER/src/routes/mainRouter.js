@@ -12,7 +12,7 @@ router.get('/', mainController.index);
 router.get('/login', mainController.login);
 
 /* Search */
-// router.get('/search', mainController.search);
+router.get('/search', mainController.search);
 
 
 // ************ DON'T TOUCH FROM HERE ************

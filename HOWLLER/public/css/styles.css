@@ -400,3 +400,29 @@ margin: 0 12px;
         font-size: 2rem;
     }
 }
+
+@media (max-width: 768px){
+    .bar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+    #secc-venta {
+        display: none;
+    }
+
+    .cont-srch {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cont-srch button {
+      border: none;
+      background-color: #fff;
+    }
+}

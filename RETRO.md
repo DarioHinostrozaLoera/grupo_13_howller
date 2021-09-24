@@ -101,3 +101,56 @@ flujo de trabajo fuera más ordenado.
 
 Link de la pagina en Heroku https://howller-sprint3.herokuapp.com/
 
+# Retrospectiva Sprint 4
+
+**1. Comenzar a hacer**
+
+- Cumplir con los dailys en los días establecidos.
+
+**2. Hacer más**
+
+- Realizar más reuniones donde compartamos nuestros avances del proyecto.
+- Codear en vivo entre los integrantes del equipo.
+
+**3. Continuar haciendo**
+
+- Divirnos entre todos los puntos del sprint a entregar.
+- Comunicarnos vía mensajes de texto.
+- Mostrar nuestros avances.
+- Buscar puntos para mejorar el proyecto que no necesariamente forman parte de los entregables.
+
+**4. Hacer menos**
+
+- Medir mejor nuestros tiempos para entregar.
+
+**5. Dejar de hacer**
+
+- Reunirnos únicamente 2 de los 3 días que habíamos acordado.
+
+**Conclusiones**
+
+Este sprint fue el primero en el que codeamos en vivo lo cual nos ayudó bastante en notar nuestro errores y repasar los temas vistos previamente en el Play Ground.
+
+**¿Qué problemas tuvimos?**
+
+- Comprender e implementar el funcionamiento del CRUD.
+
+**¿Que hicimos bien?**
+
+- Apoyo en equipo.
+- Asignación de actividades.
+- Comunicación entre nosotros.
+- Hacer un live coding.
+- Revisión cruzada del proyecto.
+
+**¿Qué podemos mejorar?**
+
+- Dedicarle más tiempo al proyecto.
+- Puntualidad en los horarios.
+- Mejor comunicación vía chat.
+- Ser más autodidacta(Buscar más recursos).
+
+
+Link de la pagina 
+
+

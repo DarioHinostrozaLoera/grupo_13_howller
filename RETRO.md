@@ -129,7 +129,8 @@ Link de la pagina en Heroku https://howller-sprint3.herokuapp.com/
 
 **Conclusiones**
 
-Este sprint fue el primero en el que codeamos en vivo lo cual nos ayudó bastante en notar nuestro errores y repasar los temas vistos previamente en el Play Ground.
+Este sprint fue el primero en el que codeamos en vivo lo cual nos ayudó bastante en notar nuestro errores y repasar los
+temas vistos previamente en el Play Ground.
 
 **¿Qué problemas tuvimos?**
 
@@ -150,7 +151,6 @@ Este sprint fue el primero en el que codeamos en vivo lo cual nos ayudó bastant
 - Mejor comunicación vía chat.
 - Ser más autodidacta(Buscar más recursos).
 
-
-Link de la pagina 
+Link de la pagina  https://howller-sprint4.herokuapp.com/
 
 

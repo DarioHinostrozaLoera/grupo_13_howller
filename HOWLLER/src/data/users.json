@@ -1,0 +1,14 @@
+[
+ {
+  "id": 0
+ },
+ {
+  "id": 1,
+  "nombre": "Gregorio",
+  "apellido": "Crisanto",
+  "mail": "email@gmail.com",
+  "pass": "123",
+  "politica": "on",
+  "img": "/img/users/img-1633738224649.png"
+ }
+]

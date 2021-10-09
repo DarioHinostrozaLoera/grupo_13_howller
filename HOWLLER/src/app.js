@@ -18,11 +18,13 @@ app.set('views', path.join(__dirname, './views'))
 // ************ Route System require and use() ************
 const mainRouter = require('./routes/mainRouter');
 const productsRouter = require('./routes/productsRouter');
+const usersRouter = require('./routes/usersRouter');
 
 let port = process.env.PORT || 3000;
 
 app.use('/', mainRouter); //Rutas main
 app.use('/products', productsRouter); //Rutas /products
+app.use('/users', usersRouter); //Rutas /users
 
 app.listen(port, () => {
     console.log(`Server listening in port ${port} 🤓👌 `);

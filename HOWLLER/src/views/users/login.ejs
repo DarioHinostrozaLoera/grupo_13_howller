@@ -39,7 +39,10 @@
                 <div class="field-wrap">
                     <input type="password" required autocomplete="off" placeholder="Contraseña *"/>
                 </div>
-
+                <div class="field-wrap">
+                    <input  type="checkbox"  autocomplete="off" /> <p>RECUÉRDAME</p>
+                    
+                </div>
                 <p class="forgot"><a href="#">¿Olviste tu Contraseña</a></p>
 
                 <button class="button button-block">Ingresar</button>
@@ -49,32 +52,37 @@
         </div>
         <div id="signup">
 
-            <form action="/" method="post">
+            <form action="/users" method="post" enctype="multipart/form-data">
 
                 <div class="top-row">
-
+                    
                     <div class="field-wrap">
-                        <input type="text" required autocomplete="off" placeholder="Nombre*"/>
+                        <label>Foto de perfil (Opcional)</label>
+                        <input type="file" id ="foto" name="foto" accept="image/*"  />
                     </div>
 
                     <div class="field-wrap">
-                        <input type="text" required autocomplete="off" placeholder="Apellidos*"/>
+                        <input id = "" name="nombre" type="nombre" required autocomplete="off" placeholder="Nombre*"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <input id = "apellido" name="apellido" type="text" required autocomplete="off" placeholder="Apellidos*"/>
                     </div>
 
                 </div>
 
                 <div class="field-wrap">
-                    <input type="email" required autocomplete="off" placeholder="Correo electronico*"/>
+                    <input id = "mail" name="mail" type="email" required autocomplete="off" placeholder="Correo electronico*"/>
                 </div>
 
                 <div class="field-wrap">
-                    <input type="password" required autocomplete="off" placeholder="Contraseña"/>
+                    <input id = "pass" name="pass" type="password" required autocomplete="off" placeholder="Contraseña"/>
                 </div>
                 <div class="field-wrap">
-                    <input type="password" required autocomplete="off" placeholder="Confirmar contraseña"/>
+                    <input id = "" name="" type="password" required autocomplete="off" placeholder="Confirmar contraseña"/>
                 </div>
                 <div class="field-wrap">
-                    <input class="check" type="checkbox"/>
+                    <input id = "politica" name="politica"  class="check" type="checkbox" required/>
                     <p>Declaro que he leído y acepto la Política de Privacidad y los Términos y Condiciones de
                         HOWLLER.</p>
                 </div>

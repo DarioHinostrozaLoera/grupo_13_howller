@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/howllericon-01.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style_login.css">
+
+    <title>Howller</title>
+</head>
+<body>
+<!-- HEADER-->
+<%- include('../partials/header') %>
+
+<h4> Registrate </h4>
+
+        <div class="login-container">
+            
+            <form action="/users/register" method="POST" enctype="multipart/form-data">
+
+                    <div class="field-wrap <%= locals.errors && errors.firstName ? 'field-wrap-error' : null %>">
+                        <input 
+                            type="text" 
+                            name="firstName"
+                            autocomplete="off" 
+                            placeholder="Nombre*"
+                            value="<%=locals.oldData ? oldData.firstName : null %>"
+                        >
+
+                        <% if (locals.errors && errors.firstName) { %>
+                            <div class="text-danger">
+                             <%= errors.firstName.msg %> 
+                            </div>
+                        <% } %>
+                    </div>
+
+                    <div class="field-wrap <%= locals.errors && errors.lastName ? 'field-wrap-error' : null %>">
+                        <input 
+                            type="text" 
+                            name="lastName"
+                            autocomplete="off" 
+                            placeholder="Apellidos*"
+                            value="<%= locals.oldData ? oldData.lastName : null %>"
+                    >
+
+                    <% if (locals.errors && errors.lastName) { %>
+                        <div class="text-danger">
+                            <%= errors.lastName.msg %>
+                        </div>
+                    <% } %>
+                    </div>
+
+                <div class="field-wrap <%= locals.errors && errors.email ? 'field-wrap-error' : null %>">
+                    <input
+                        type="email" 
+                        name="email"
+                         
+                        autocomplete="off" 
+                        placeholder="Correo electronico*"
+                        value="<%= locals.oldData ? oldData.email : null %>"
+                    >
+
+                    <% if (locals.errors && errors.email) { %>
+                        <div class="text-danger">
+                            <%= errors.email.msg %>
+                        </div>
+                    <% } %>
+
+                </div>
+
+                <div class="field-wrap <%= locals.errors && errors.password ? 'field-wrap-error' : null %>">
+                    <input 
+                        type="password" 
+                        name="password"
+                        autocomplete="off" 
+                        placeholder="Contraseña"
+                    >
+
+                    <% if (locals.errors && errors.password) { %>
+                        <div class="text-danger">
+                            <%= errors.password.msg %>
+                        </div>
+                    <% } %>
+
+                </div>
+
+                <div class="field-wrap <%= locals.errors && errors.avatar ? 'field-wrap-error' : null %>">
+                    <label><b>Imagen de perfil:</b></label>
+                    <input 
+                        type="file" 
+                        name="avatar"
+                        class="form-control <%= locals.errors && errors.avatar ? 'is-invalid' : null %>"
+                    >
+                    <% if (locals.errors && errors.avatar) { %>
+                        <div class="text-danger">
+                            <%= errors.avatar.msg %>
+                        </div>
+                    <% } %>
+                </div>
+
+                <div class="field-wrap" id="cuadrito">
+                    <input class="check" type="checkbox"/>
+                    <p>Declaro que he leído y acepto la Política de Privacidad y los Términos y Condiciones de
+                        HOWLLER.</p>
+                </div>
+
+                <button type="submit" class="button-form">Registrarse</button>
+
+            </form>
+
+        </div>
+
+</body>
+
+<%- include('../partials/footer') %>
+
+</html>

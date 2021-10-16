@@ -18,95 +18,52 @@
 <!-- HEADER-->
 <%- include('../partials/header') %>
 
-<!--FORMULARIO-->
-<div class="form">
+<h4> Inicia sesión </h4>
+        <div class="login-container">
+            
 
-    <ul class="tab-group">
-        <li class="tab active"><a href="#login" onclick="mostarlogin();">Iniciar sesión</a></li>
-        <li class="tab"><a href="#signup" onclick="mostarregister();">Registrarse</a></li>
-    </ul>
+            <form action="/users/login" method="POST">
 
-    <div class="tab-content">
 
-        <div id="login">
 
-            <form action="/" method="post">
+                <div class="field-wrap <%= locals.errors && (errors.password || errors.email)  ? 'field-wrap-error' : null %>">
+                    <input
+                        type="email" 
+                        name="email"
+                        autocomplete="off" 
+                        placeholder="Correo electronico*"
+                        value="<%= locals.oldData ? oldData.email : null %>"
+                    >
 
-                <div class="field-wrap">
-                    <input type="email" required autocomplete="off" placeholder="Correo electrónico *"/>
                 </div>
 
-                <div class="field-wrap">
-                    <input type="password" required autocomplete="off" placeholder="Contraseña *"/>
+                <div class="field-wrap <%= locals.errors && (errors.password || errors.email)   ? 'field-wrap-error' : null %>">
+                    <input 
+                        type="password" 
+                        name="password"
+                        autocomplete="off" 
+                        placeholder="Contraseña"
+                    >
+
                 </div>
-                <div class="field-wrap">
-                    <input  type="checkbox"  autocomplete="off" /> <p>RECUÉRDAME</p>
-                    
-                </div>
-                <p class="forgot"><a href="#">¿Olviste tu Contraseña</a></p>
 
-                <button class="button button-block">Ingresar</button>
-
-            </form>
-
-        </div>
-        <div id="signup">
-
-            <form action="/users" method="post" enctype="multipart/form-data">
-
-                <div class="top-row">
-                    
-                    <div class="field-wrap">
-                        <label>Foto de perfil (Opcional)</label>
-                        <input type="file" id ="foto" name="foto" accept="image/*"  />
+                
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                        <%= errors.email.msg %>
                     </div>
+                <% } %>
 
-                    <div class="field-wrap">
-                        <input id = "" name="nombre" type="nombre" required autocomplete="off" placeholder="Nombre*"/>
-                    </div>
 
-                    <div class="field-wrap">
-                        <input id = "apellido" name="apellido" type="text" required autocomplete="off" placeholder="Apellidos*"/>
-                    </div>
 
-                </div>
-
-                <div class="field-wrap">
-                    <input id = "mail" name="mail" type="email" required autocomplete="off" placeholder="Correo electronico*"/>
-                </div>
-
-                <div class="field-wrap">
-                    <input id = "pass" name="pass" type="password" required autocomplete="off" placeholder="Contraseña"/>
-                </div>
-                <div class="field-wrap">
-                    <input id = "" name="" type="password" required autocomplete="off" placeholder="Confirmar contraseña"/>
-                </div>
-                <div class="field-wrap">
-                    <input id = "politica" name="politica"  class="check" type="checkbox" required/>
-                    <p>Declaro que he leído y acepto la Política de Privacidad y los Términos y Condiciones de
-                        HOWLLER.</p>
-                </div>
-
-                <button type="submit" class="button button-block">Registrarse</button>
+                <button type="submit" class="button-form">Ingresar</button>
 
             </form>
 
         </div>
 
-    </div><!-- tab-content -->
+        <h4> ¿Aún no tienes una cuenta? Regístrate <a href="/users/register">aquí</a> </h4>
 
-</div> <!-- /form -->
-<script type="text/javascript">
-    function mostarregister() {
-        document.getElementById('signup').style.display = 'block'
-        document.getElementById('login').style.display = 'none'
-    }
-
-    function mostarlogin() {
-        document.getElementById('signup').style.display = 'none'
-        document.getElementById('login').style.display = 'block'
-    }
-</script>
 
 </body>
 

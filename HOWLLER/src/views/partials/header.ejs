@@ -3,8 +3,21 @@
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <a href="/" class="logo"> <img src="/img/logos/00 logotipo-01.svg" alt=""> </a>
         <div class="icons-container">
-            <a href="/login" class="kk" id="user"> <i class="fas fa-user"></i> </a>
+
+                <% if (locals.isLogged) { %>
+
+
+            <a href="/users/userProfile">
+                <img src="/img/avatars/<%= locals.userLogged.avatar %> " alt="">
+            </a> <h5>  <%= locals.userLogged.firstName %>  </h5> 
+
+            <% }  else { %> 
+
+            <a href="/users/login" class="kk" id="user"> <i class="fas fa-user"></i> </a>
             <a href="/products/cart/5" class="kk" id="cart"> <i class="fas fa-shopping-cart"></i> </a>
+
+            <% } %>
+
         </div>
 
         <ul class="mainMenu">

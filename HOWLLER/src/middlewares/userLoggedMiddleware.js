@@ -7,7 +7,15 @@ function userLoggedMiddleware(req, res, next) {
         res.locals.isLogged = true;
         res.locals.userLogged = req.session.userLogged;
     }
+    let remember = req.cookies;
+    let valor = req.session.userLogged === undefined ? remember.remember : req.session.userLogged;
 
+    if (remember.remember === undefined) {
+        res.locals.isLogged = false;
+    } else {
+        res.locals.isLogged = true;
+        res.locals.userLogged = valor;
+    }
 
     /* 	let emailInCookie = req.cookies.userEmail;
         let userFromCookie = User.findByField('email', emailInCookie);

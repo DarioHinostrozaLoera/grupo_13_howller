@@ -22,5 +22,13 @@
   "email": "mig@mig.com",
   "password": "$2a$10$5TtMpFpNiSo8gku.HJbDvuxwuKKPIR/HR4bkZ6hSUaqNLeHg8i.Ha",
   "avatar": "1634518877434_img.jpg"
+ },
+ {
+  "id": 4,
+  "firstName": "Jhon",
+  "lastName": "Lennon",
+  "email": "beatle1@hotmail.com",
+  "password": "$2a$10$H4/yE0vRVSLG9EvjjhMPmeIk.Uvge0k2HlcTNeqztqRqBdRZSgFYW",
+  "avatar": "1634524060003_img.jpg"
  }
 ]

@@ -193,6 +193,7 @@ nav .logo {
     cursor: pointer;
     display: flex;
     justify-content: center;
+    
 }
 
 
@@ -210,6 +211,7 @@ nav .logo {
 
 .logo img{
   width: 50%;
+  margin-left: 20px;
 }
 
  @media(max-width: 8000px){
@@ -431,6 +433,16 @@ margin: 0 12px;
     align-items: center;
     width: 30%;
 
+}
+
+.icons-container button {
+    background-color: transparent;
+    color:#fff;
+    cursor: pointer;
+    border: none;
+    /* text-transform: uppercase; */
+    font-weight: bolder;
+    margin: 0px 8px 0px 0px;
 }
 
 

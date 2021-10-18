@@ -1,10 +1,18 @@
 [
- {
-  "id": 1,
-  "firstName": "Miguel",
-  "lastName": "Hinostroza",
-  "email": "prueba@prueba.com",
-  "password": "$2a$10$CqyEC1I6wmisLmSdnu7gJu3B0dNNnkhfrm8EaY9aHC/kIrZC0zQFq",
-  "avatar": "1634357729357_img.jpg"
- }
+  {
+    "id": 1,
+    "firstName": "Oscar",
+    "lastName": "Baez",
+    "email": "oscar.baez@gmail.com",
+    "password": "$2a$10$T/a2gHOiyVsF44Kn5xByc.D28vyvSBrJdIbkFsdDZ/.4bfuFvmOhK",
+    "avatar": "1634515703698_img.jpg"
+  },
+  {
+    "id": 2,
+    "firstName": "Peter ",
+    "lastName": "Parker",
+    "email": "spidey@gmail.com",
+    "password": "$2a$10$/a0jwZQXYMlkx//dJrFsIOQhKwfZCOWJ8M1kwm.4mWuTmtIOw04JO",
+    "avatar": "1634516399422_img.jpg"
+  }
 ]

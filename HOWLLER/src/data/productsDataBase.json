@@ -53,7 +53,8 @@
     "categoria": "hombres",
     "color": "azul",
     "status": "nuevo",
-    "precio": "149"
+    "precio": "149",
+    "favorito" : "true"
   },
   {
     "id": 5,
@@ -123,7 +124,8 @@
     "color": "naranja",
     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
     "categoria": "hombres",
-    "status": "en oferta"
+    "status": "en oferta",
+    "favorito" : "true"
   },
   {
     "id": 10,
@@ -277,7 +279,8 @@
     "color": "azul",
     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
     "categoria": "mujeres",
-    "status": "nuevo"
+    "status": "nuevo",
+    "favorito" : "true"
   },
   {
     "id": 21,
@@ -333,6 +336,7 @@
     "color": "azul",
     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo alias doloremque.",
     "categoria": "hombres",
-    "status": "en oferta"
+    "status": "en oferta",
+    "favorito" : "true"
   }
 ]

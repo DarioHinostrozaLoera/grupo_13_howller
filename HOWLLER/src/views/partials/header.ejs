@@ -5,22 +5,13 @@
         <div class="icons-container">
 
             <% if (locals.isLogged) { %>
-
-                <a href="/users/userProfile">
+                <a class=avatar-cont href="/users/userProfile">
                     <img src="/img/avatars/<%= locals.userLogged.avatar %> " alt="">
-                </a> <h5>  <%= locals.userLogged.firstName %>  </h5>
-
-                <form action="/users/logout/" method="get">
-                    <button style="background-color: #212121; color: #e0e0e0; cursor: pointer" type="submit">Log Out
-                    </button>
-                </form>
-
+                </a> <!-- <h5>  <%= locals.userLogged.firstName %>  </h5>  -->
             <% }  else { %>
-
                 <a href="/users/login" class="kk" id="user"> <i class="fas fa-user"></i> </a>
-                <a href="/products/cart/5" class="kk" id="cart"> <i class="fas fa-shopping-cart"></i> </a>
-
             <% } %>
+            <a href="/products/cart/5" class="kk" id="cart"> <i class="fas fa-shopping-cart"></i> </a>
 
         </div>
 
@@ -47,20 +38,16 @@
             <a href="/products/girls"> <span> Niñas </span> </a>
             <a href="/products/boys"> <span> Niños</span> </a>
             <a href="/products/ofertas"> <span> Ofertas</span> </a>
+            <a href="/products/create"> <span> verder </span> </a>
             <a href="/products/todos"> <span> Todo </span> </a>
-            <% if (locals.isLogged) { %>
-                <a href="/products/create"> <span> verder </span> </a>
-            <% }  else { %>
-                <div></div>
-            <% } %>
         </div>
 
-        <span class="cont-srch"> 
+        <span class="cont-srch">
             <form action="/search" method="GET" class="cont-srch">
-                <input class="search-txt" type="text" name="keywords" placeholder="BUSCAR"> 
+                <input class="search-txt" type="text" name="keywords" placeholder="BUSCAR">
                 <button type="submit"><i class="fas fa-search"></i></a></button>
             </form>
-            
+
         </span>
 
     </div>
@@ -69,8 +56,6 @@
         const mainMenu = document.querySelector('.mainMenu');
         const closeMenu = document.querySelector('.closeMenu');
         const openMenu = document.querySelector('.openMenu');
-
-
         openMenu.addEventListener('click', show);
         closeMenu.addEventListener('click', cerrar);
 

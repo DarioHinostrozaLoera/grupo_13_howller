@@ -19,50 +19,51 @@
 <%- include('../partials/header') %>
 
 <h4> Inicia sesión </h4>
-        <div class="login-container">
-            
-
-            <form action="/users/login" method="POST">
+<div class="login-container">
 
 
-
-                <div class="field-wrap <%= locals.errors && (errors.password || errors.email)  ? 'field-wrap-error' : null %>">
-                    <input
-                        type="email" 
-                        name="email"
-                        autocomplete="off" 
-                        placeholder="Correo electronico*"
-                        value="<%= locals.oldData ? oldData.email : null %>"
-                    >
-
-                </div>
-
-                <div class="field-wrap <%= locals.errors && (errors.password || errors.email)   ? 'field-wrap-error' : null %>">
-                    <input 
-                        type="password" 
-                        name="password"
-                        autocomplete="off" 
-                        placeholder="Contraseña"
-                    >
-
-                </div>
-
-                
-                <% if (locals.errors && errors.email) { %>
-                    <div class="text-danger">
-                        <%= errors.email.msg %>
-                    </div>
-                <% } %>
+    <form action="/users/login" method="POST">
 
 
-
-                <button type="submit" class="button-form">Ingresar</button>
-
-            </form>
+        <div class="field-wrap <%= locals.errors && (errors.password || errors.email) ? 'field-wrap-error' : null %>">
+            <input
+                    type="email"
+                    name="email"
+                    autocomplete="off"
+                    placeholder="Correo electronico*"
+                    value="<%= locals.oldData ? oldData.email : null %>"
+            >
 
         </div>
 
-        <h4> ¿Aún no tienes una cuenta? Regístrate <a href="/users/register">aquí</a> </h4>
+        <div class="field-wrap <%= locals.errors && (errors.password || errors.email) ? 'field-wrap-error' : null %>">
+            <input
+                    type="password"
+                    name="password"
+                    autocomplete="off"
+                    placeholder="Contraseña"
+            >
+
+        </div>
+
+        <% if (locals.errors && errors.email) { %>
+            <div class="text-danger">
+                <%= errors.email.msg %>
+            </div>
+        <% } %>
+
+        <div class="field-wrap" id="recordar">
+            <input class="check" name="recordar" type="checkbox"/>
+            <p>¿Mantener Sessión Iniciada?</p>
+        </div>
+
+        <button type="submit" class="button-form">Ingresar</button>
+
+    </form>
+
+</div>
+
+<h4> ¿Aún no tienes una cuenta? Regístrate <a href="/users/register">aquí</a></h4>
 
 
 </body>

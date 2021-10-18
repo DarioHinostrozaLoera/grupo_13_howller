@@ -165,13 +165,22 @@
 
                 </div>
 
-                <div class="edit-delete">
-                    <!--<a href="/products/edit/<%= playera.id %>">
+                <% if (locals.isLogged) { %>
+
+                    <div class="edit-delete">
+                        <!--<a href="/products/edit/<%= playera.id %>">
                         <button class="button-edit">Editar</button>
                     </a>-->
-                    <button id="button_edit">Editar</button>
-                    <button id="button_delete">Eliminar</button>
-                </div>
+                        <button id="button_edit">Editar</button>
+                        <button id="button_delete">Eliminar</button>
+                    </div>
+
+                <% }  else { %>
+
+                    <div></div>
+
+                <% } %>
+
                 <!--Edit-->
                 <div class="modale_containere" id="modale_containere_edit">
                     <div class="modaleEdit">

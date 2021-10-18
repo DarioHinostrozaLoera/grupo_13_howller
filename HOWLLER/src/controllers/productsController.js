@@ -9,7 +9,8 @@ const mainController = {
     detail: (req, res) => {
         let id = req.params.productId;
         let playera = listaProductos.find((playera) => playera.id == id);
-        res.render('./products/detail_product', {playera: playera});
+        let remember = req.cookies;
+        return res.render('./products/detail_product', {playera: playera});
     },
     cart: (req, res) => {
         let playeraC = listaProductos.find((playera) => playera.id == req.params.productId);

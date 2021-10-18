@@ -1,3 +1,10 @@
 [
-
+ {
+  "id": 1,
+  "firstName": "Miguel",
+  "lastName": "Hinostroza",
+  "email": "prueba@prueba.com",
+  "password": "$2a$10$CqyEC1I6wmisLmSdnu7gJu3B0dNNnkhfrm8EaY9aHC/kIrZC0zQFq",
+  "avatar": "1634357729357_img.jpg"
+ }
 ]

@@ -65,19 +65,22 @@
     background-color: #32E0C4;
 }
 
-p{
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    font-size: .5rem;
-}
-#cuadrito{
-    display: flex;
-    flex-wrap: nowrap;
-}
-#cuadrito input{
-   width: 12px;
 
+
+
+#recordar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#recordar p {
+    text-align: left;
+    font-size: 1rem;
+    
+}
+
+#recordar input{
+    width: 15px;
 }
 
 h4{
@@ -86,12 +89,43 @@ h4{
 }
 
 
+@media (min-width : 0){
+    p{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: .5rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+    #cuadrito{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #cuadrito input{
+       width: 20px;
+    }
+}
+
 @media (min-width : 480px){
     .field-wrap{
         margin-left: auto;
         margin-right: auto;
         width: 300px;
         padding: 10px;
+    }
+    #recordar p {
+        text-align: left;
+        font-size: 1rem;
+        margin:auto;
+       
+        
+    }
+    
+    #recordar input{
+        width: 15px;
+        margin-left: 40px;
     }
 }
 
@@ -113,6 +147,22 @@ h4{
         width: 60%;
         margin-bottom: 4%;
     }
+    p{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: .6rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    #cuadrito{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #cuadrito input{
+       width: 18px;
+    }
 }
 
 @media (min-width : 1280px){
@@ -133,7 +183,15 @@ h4{
         width: 40%;
         margin-bottom: 2%;
     }
+    #recordar p {
+        text-align: left;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    
+    #recordar input{
+        width: 15px;
+        margin-left: 100px;
+    }
 }
-
-
 

@@ -462,9 +462,28 @@ margin: 0 12px;
     
 }
 
+.title{
+    width: 100%;
+    color: #FFC947;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+    color:#000000;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
 
 @media (min-width: 0px){
     h5{
+        display: none;
+    }
+    .title{
         display: none;
     }
 }
@@ -479,6 +498,15 @@ margin: 0 12px;
         width: 20%;
     
     }
+    .title{
+        display: block;
+        margin-left: 20px;
+        padding: 30px;
+    }
+    h3{
+        padding: 30px;
+    }
+    
 }
 
 

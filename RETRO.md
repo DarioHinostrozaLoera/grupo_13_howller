@@ -153,4 +153,61 @@ temas vistos previamente en el Play Ground.
 
 Link de la pagina  https://howller-sprint4.herokuapp.com/
 
+# Retrospectiva Sprint 5
+
+**1. Comenzar a hacer**
+
+- Cumplir con los weeklies en los días establecidos.
+
+**2. Hacer más**
+
+- Realizar más reuniones donde compartamos nuestros avances del proyecto.
+- Codear en vivo entre los integrantes del equipo.
+
+**3. Continuar haciendo**
+
+- Divirnos entre todos los puntos del sprint a entregar.
+- Comunicarnos vía mensajes de texto.
+- Mostrar nuestros avances.
+- Buscar puntos para mejorar el proyecto que no necesariamente forman parte de los entregables.
+- Entregar un poco más de lo que pide el sprint.
+
+**4. Hacer menos**
+
+- Medir nuestros tiempos para entregar.
+
+**5. Dejar de hacer**
+
+- Reunirnos únicamente 2 de los 3 días que habíamos acordado.
+
+**Conclusiones**
+
+- Este sprint tuvo entregas no tan complejas por lo que pudimos medir mejor nuestro tiempo y presentar un proyecto más completo que cumple con todos los puntos del sprint y más.
+
+**¿Qué problemas tuvimos?**
+
+- Comprender e implementar el funcionamiento del CRUD.
+- Uso de Express validator.
+- Trabajar con cookies.
+
+
+**¿Que hicimos bien?**
+
+- Apoyo de todos los integrantes del equipo.
+- Desarrollo del proyecto en cascada.
+- Asignación de actividades.
+- Comunicación entre nosotros.
+- Revisión cruzada del proyecto.
+
+**¿Qué podemos mejorar?**
+
+- Dedicarle más tiempo al proyecto.
+- Mejor comunicación vía chat.
+- Ser más autodidacta(Buscar más recursos).
+
+Link de la pagina  
+
+
+
+
 

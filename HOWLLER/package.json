@@ -20,6 +20,7 @@
   "homepage": "https://github.com/DarioHinostrozaLoera/grupo_13_howller#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cli": "^1.0.1",
     "cookie-parser": "^1.4.5",
     "dependencies": "0.0.1",
     "ejs": "^3.1.6",
@@ -28,7 +29,9 @@
     "express-validator": "^6.13.0",
     "method-override": "^3.0.0",
     "multer": "^1.4.3",
-    "nodemon": "^2.0.12"
+    "mysql2": "^2.3.3-rc.0",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.9.0"
   },
   "engines": {
     "node": "14.17.0"

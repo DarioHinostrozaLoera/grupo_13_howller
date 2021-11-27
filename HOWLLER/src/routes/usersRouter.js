@@ -48,10 +48,10 @@ const guestMiddleware = require ('../middlewares/guestMiddleware');
 const authMiddleware = require ('../middlewares/authMiddleware');
 
 // Formulario de registro
-router.get('/register', guestMiddleware, usersController.register);
+router.get('/register', guestMiddleware, usersController.create);
 
 // Procesar el registro
-router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister); //usamos multer (uploadFile) como middleware para subir un archivo (usamos .single) llamado "avatar", que es el mismo nombre que le dimos en el formulario
+router.post('/register', uploadFile.single('avatar'), validations, usersController.createProcess); //usamos multer (uploadFile) como middleware para subir un archivo (usamos .single) llamado "avatar", que es el mismo nombre que le dimos en el formulario
 
 // Formulario de login
 router.get('/login',guestMiddleware, usersController.login);

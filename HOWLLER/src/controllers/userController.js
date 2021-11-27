@@ -1,15 +1,23 @@
 const bcryptjs = require('bcryptjs');
 const {validationResult} = require('express-validator'); //aqui capturo las validaciones que vienen del Router
 
+//base de datos JSON
 const User = require('../models/User')
 
-const controller = {
-    register: (req, res) => {
-        return res.render('./users/register');
-    },
-    processRegister: (req, res) => {
-        const resultValidation = validationResult(req);
+//base de datos MySQL
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const Usuario = db.Usuarios; 
 
+
+const controller = {
+
+    create: function (req, res) {
+        return res.render('./users/register');        
+    },
+    createProcess: function (req, res) {
+        const resultValidation = validationResult(req);
+        console.log(resultValidation.mapped());
         if (resultValidation.errors.length > 0) {
             return res.render('./users/register', {
                 errors: resultValidation.mapped(),
@@ -17,30 +25,20 @@ const controller = {
             });
         }
 
-        let userInDB = User.findByField('email', req.body.email); //Verificar, mediante el email, si el usuario ya esta registrado
-
-        if (userInDB) {
-            return res.render('./users/register', {
-                errors: {
-                    email: {
-                        msg: 'Este email ya está registrado'
-                    }
-                },
-                oldData: req.body
-            });
-        }
-
-        let userToCreate = {
-            ...req.body,
-            password: bcryptjs.hashSync(req.body.password, 10), //hashear la contraseña del usuario
-            avatar: req.file.filename
-        }
-
-        let userCreated = User.create(userToCreate);
-
-        return res.redirect('./login');
-
+        Usuario.create(
+            {
+                nombre_USUARIOS: req.body.firstName,
+                apellido_USUARIO: req.body.lastName,
+                correo_USUARIOS: req.body.email,
+                'contraseña_USUARIOS': bcryptjs.hashSync(req.body.password, 10),
+                imagen_USUARIOS:req.body.avatar
+            }
+        )
+        .then(()=> {
+            return res.redirect('./login')})            
+        .catch(error => res.send(error))
     },
+
     login: (req, res) => {
         return res.render('./users/login');
     },
